@@ -29,8 +29,8 @@ Para organizar nosso projeto, criamos um quadro Kanban diretamente no GitHub, se
 
 - Backlog: Esta coluna recebe todas as tarefas a serem trabalhadas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem ser incorporadas a esta lista. 
 - A Fazer (To Do): Aqui está o Sprint Backlog atual, ou seja, as tarefas que estamos trabalhando no sprint atual. 
-- Em Andamento (Doing)**: As tarefas que foram iniciadas são movidas para esta coluna. 
-- Concluído (Done)**: Aqui ficam as tarefas que passaram pelos testes e controle de qualidade e estão prontas para serem entregues ao usuário. Não há mais edições ou revisões necessárias; elas estão prontas para ação. 
+- Em Andamento (Doing): As tarefas que foram iniciadas são movidas para esta coluna. 
+- Concluído (Done): Aqui ficam as tarefas que passaram pelos testes e controle de qualidade e estão prontas para serem entregues ao usuário. Não há mais edições ou revisões necessárias; elas estão prontas para ação. 
 O quadro Kanban está disponível no seguinte link: [LINK DO KANBAN](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/974/views/1)
 
 Essa estrutura de colunas permite um fluxo de trabalho claro e organizado, desde o backlog até a entrega final das tarefas. 
@@ -62,7 +62,7 @@ Essa estrutura de colunas permite um fluxo de trabalho claro e organizado, desde
 
 
 ![Screenshot_2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/074ec0d1-bccf-4147-84bb-4ed22eacea09)
-<br>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+<br>Figura 2 - Tela do esquema de cores e categorias</figcaption>
 
   
 ### Ferramentas
