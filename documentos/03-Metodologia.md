@@ -1,8 +1,6 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
-
 
 ## Gerenciamento de Projeto
 A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
@@ -26,10 +24,20 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 ### Processo
 
 [Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+
+Para organizar nosso projeto, criamos um quadro Kanban diretamente no GitHub, seguindo o seguinte padrão: 
+
+- Backlog: Esta coluna recebe todas as tarefas a serem trabalhadas, representando o Product Backlog. Todas as atividades identificadas durante o projeto devem ser incorporadas a esta lista. 
+- A Fazer (To Do): Aqui está o Sprint Backlog atual, ou seja, as tarefas que estamos trabalhando no sprint atual. 
+- Em Andamento (Doing)**: As tarefas que foram iniciadas são movidas para esta coluna. 
+- Concluído (Done)**: Aqui ficam as tarefas que passaram pelos testes e controle de qualidade e estão prontas para serem entregues ao usuário. Não há mais edições ou revisões necessárias; elas estão prontas para ação. 
+O quadro Kanban está disponível no seguinte link: [LINK DO KANBAN](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/974/views/1)
+
+Essa estrutura de colunas permite um fluxo de trabalho claro e organizado, desde o backlog até a entrega final das tarefas. 
+![Screenshot_1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/09a7104a-3314-4845-848c-c563684aecbd)
+<br>Figura 1 - Tela do kanban no GitHub utilizada pelo grupo
+
+
 
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
@@ -48,12 +56,14 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
   <li>Gerência de Projetos (Project Management)</li>
   <li>Infraestrutura (Infrastructure)</li>
   <li>Testes (Tests)</li>
+  <li>Melhoria(Enhancement)</li>
+  <li>Descontinuado(Discontinued)</li>
 </ul>
 
-<figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
-</figure> 
+
+![Screenshot_2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/074ec0d1-bccf-4147-84bb-4ed22eacea09)
+<br>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+
   
 ### Ferramentas
 
