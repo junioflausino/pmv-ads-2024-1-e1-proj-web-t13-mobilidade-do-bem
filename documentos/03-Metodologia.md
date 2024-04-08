@@ -76,7 +76,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Documentos do projeto               | GitHub                             |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/6913e9b19d19b15ff1c56c4580b467bacb17fe83/documentos|
 | Projeto de Interface                | Figma                              | https://www.figma.com/files/team/1359219319360713504/Mobilidade-do-Bem        
 | Gerenciamento do Projeto            | GitHub Projects                    |https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/974|
-| Hospedagem                          | GitHub Pages                       | http://....                            |
+
 
 
 ### Estratégia de Organização de Codificação 
