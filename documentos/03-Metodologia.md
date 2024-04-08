@@ -10,7 +10,7 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 ### Divisão de Papéis
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
+
 - Scrum Master: Letícia Moreira.
 - Product Owner: Junio Flausino
 - Equipe de Desenvolvimento:Daianne Paula, Junio Flausino, Letícia Moreira, Marcela de Oliveira, Nicolas Gabriel.
@@ -22,8 +22,6 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 > - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
-
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
 
 Para organizar nosso projeto, criamos um quadro Kanban diretamente no GitHub, seguindo o seguinte padrão: 
 
@@ -65,8 +63,6 @@ Essa estrutura de colunas permite um fluxo de trabalho claro e organizado, desde
 
   
 ### Ferramentas
-
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
