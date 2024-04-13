@@ -1,12 +1,9 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+Em um mundo ideal, cidades seriam projetadas para acomodar todas as pessoas, independentemente de suas habilidades físicas. Contudo, a realidade é diferente para muitas pessoas com deficiência ou mobilidade reduzida, que enfrentam dificuldades para encontrar equipamentos de mobilidade e acessibilidade. Segundo decreto nº 3298, art. 2 de 20/12/1999, cabe ao governo brasileiro garantir às pessoas com deficiência o direito à saúde, ao trabalho, ao desporto, ao turismo, ao lazer, à assistência social, ao transporte, à cultura, ao amparo à infância [...]. Entretanto, o Estado não consegue suprir a demanda quanto à doação de equipamentos/dispositivos de mobilidade, tendo em vista que esse procedimento é muito burocrático e a quantidade de pessoas com deficiência física é muito alta. Faz-se necessário, portanto, adotar medidas que ajudem os indivíduos PCD a superarem esse obstáculo locomotivo, de maneira que possam desfrutar da autonomia de se movimentarem pela cidade com dignidade e orgulho. 
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
-
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+O desafio reside no fato de que, no Brasil, muitas pessoas enfrentam dificuldades para acessar equipamentos de mobilidade física de qualidade, seja devido à escassez desses dispositivos no mercado ou aos preços elevados. Além disso, é comum que muitas pessoas acumulem equipamentos que não necessitam mais, levando a sua deterioração e perda ao longo do tempo. 
 
 ## Objetivos
 
