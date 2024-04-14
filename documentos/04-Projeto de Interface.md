@@ -102,6 +102,16 @@ Esta estrutura possui as seguintes funções:
 </figure> 
 <hr>
 
+<h3><b>Retorno de Finalização de Pedidos</b></h3>
+<p>A página de Retorno de Finalização de Pedidos informa ao usuário que a reserva foi feita com sucesso e disponibiliza o contato do doador/emprestador.</p>
+
+![WhatsApp Image 2024-04-14 at 16 45 35](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/b9c75e32-5536-4665-aa21-9cca24b811f8)
+
+<figure> 
+  <figcaption> Figura 10 - Finalização de Pedidos
+</figure> 
+<hr>
+
 
 
 
