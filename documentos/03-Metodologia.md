@@ -16,10 +16,6 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Desenvolvimento:Daianne Paula, Junio Flausino, Letícia Moreira, Marcela de Oliveira, Nicolas Gabriel.
 - Equipe de Design:Daianne Paula, Marcela de Oliveira Santos .
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
 
@@ -34,13 +30,6 @@ O quadro Kanban está disponível no seguinte link: [LINK DO KANBAN](https://git
 Essa estrutura de colunas permite um fluxo de trabalho claro e organizado, desde o backlog até a entrega final das tarefas. 
 ![Screenshot_1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/09a7104a-3314-4845-848c-c563684aecbd)
 <br>Figura 1 - Tela do kanban no GitHub utilizada pelo grupo
-
-
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
 
 
 ### Etiquetas
