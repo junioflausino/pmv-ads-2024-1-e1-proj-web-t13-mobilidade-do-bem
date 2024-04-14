@@ -5,7 +5,7 @@
 
 Foi criado um fluxograma para representar o fluxo do site, conforme apresentado na Figura 1. As telas podem ser vistas neste [link](https://www.figma.com/file/buiAz8Ppp889VEhVFYQWtF/Mobilidade-do-Bem?type=design&node-id=137%3A2&mode=design&t=qfn4wht3QSOW4R9c-1) 
 
-![MOBILIDADE DO BEM (4)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/9ce72c43-380f-4bdd-b486-e679fb0cb9c9)
+![MOBILIDADE DO BEM (6)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/9e249053-3982-434e-99b4-bacad86468a3)
 
 <figure> 
   <figcaption>Figura 1 - Fluxo de Usuário (User Flow)
