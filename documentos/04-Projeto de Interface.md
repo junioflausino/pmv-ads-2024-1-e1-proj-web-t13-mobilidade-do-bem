@@ -7,26 +7,101 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ![MOBILIDADE DO BEM (4)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/9ce72c43-380f-4bdd-b486-e679fb0cb9c9)
 
+<figure> 
+  <figcaption>Figura 1 - Fluxo de Usuário (User Flow)
+</figure> 
+<hr>
+
+### Protótipo de Baixa Fidelidade
+
+As páginas do sistema apresentam uma estrutura padrão constituídas por: cabeçalho, conteúdo e rodapé, como apresenta a figura 2.
+
+Esta estrutura possui as seguintes funções:   
+<ul>
+  <li>Cabeçalho - contém a logomarca do projeto e o menu principal do site;</li>
+  <li>Conteúdo - apresenta o conteúdo da página em questão;</li>
+  <li>Rodapé - apresenta informações sobre os direitos autorais.</li>
+</ul>
+
+![Estrutura Padrão](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/2d6ee75f-63b5-41d6-ad23-7b6c6bc1ad7f)
+
+<figure> 
+  <figcaption>Figura 2 - Protótipo de Baixa Fidelidade
+</figure> 
+<hr>
+
+<h3><b>Tela - Página Inicial (home page) </b></h3>
+<p>A página inicial (home page) apresenta, além da estrutura padrão do site, uma breve descrição sobre o projeto. </p>
+  
+![Página Inicial (home page)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/9e5d960b-2150-4c15-a08e-96bc45406976)
+
+<figure> 
+  <figcaption>Figura 3 - Página Inicial (home page)
+</figure> 
+<hr>
+
+<h3><b>Página de Login</b></h3>
+<p>A página de Login permite ao usuário o login ou, caso ainda não possua conta, o usuário pode ser redirecionado para criar a conta.</p>
+
+![Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/19b6d710-ef12-4194-be4f-e790a4b4a5e4)
+
+<figure> 
+  <figcaption> Figura 4 - Página de Login
+</figure> 
+<hr>
+
+<h3><b>Cadastro de Usuário</b></h3>
+<p>A página de Cadastro de Usuário permite ao usuário criar uma conta.</p>
+
+![Cadastro de Usuário](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/d0ac904d-b590-4710-b745-dd258b7cb57d)
+
+<figure> 
+  <figcaption> Figura 5 - Cadastro de Usuário
+</figure> 
+<hr>
+
+<h3><b>Página de Perfil</b></h3>
+<p>A página de Perfil permite ao usuário configurar suas informações de perfil, conferir suas reservas, seus produtos cadastrados e realizar o logout.</p>
+
+![Página de Perfil](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/c4111c7a-b980-4ac1-8c9c-11a0856b4eea)
+
+<figure> 
+  <figcaption> Figura 6 - Página de Perfil
+</figure> 
+<hr>
+
+<h3><b>Cadastro de Produto</b></h3>
+<p>A página de Cadastro de Produto permite ao usuário cadastrar um produto para doação ou empréstimo.</p>
+
+![Cadastro de Produto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/32b5ad17-1147-4b35-adda-4b2465d78a3e)
 
 
-## Protótipo
+<figure> 
+  <figcaption> Figura 7 - Cadastro de Produto
+</figure> 
+<hr>
 
-Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
+<h3><b>Página de Produtos</b></h3>
+<p>A página de Produtos permite ao usuário conferir todos os produtos que estão disponíveis para empréstimo ou doação.</p>
 
-### Protótipo de baixa fidelidade
+![Produtos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/9be18945-3de9-41a0-a826-ab5a97057e5f)
 
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
 
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
+<figure> 
+  <figcaption> Figura 8 - Página de Produtos
+</figure> 
+<hr>
 
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
->> - [Pencil](https://pencil.evolus.vn/)
->> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
+<h3><b>Finalização de Pedidos</b></h3>
+<p>A página de Finalização de Pedidos permite ao usuário finalizar o processo de reserva de um equipamento (doação ou empréstimo).</p>
+
+![Finalização de Pedidos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/6552932a-5b76-491d-8cf5-b8f53cb7f9b5)
+
+<figure> 
+  <figcaption> Figura 9 - Finalização de Pedidos
+</figure> 
+<hr>
+
 
 
 
