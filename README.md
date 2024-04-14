@@ -1,12 +1,13 @@
-# Título do Projeto
+# Mobilidade do Bem
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`Eixo 1 - 1º semestre de 2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Este projeto visa criar uma plataforma digital acessível e eficiente que facilita a interligação entre indivíduos que possuem equipamentos de 
+mobilidade e aqueles que necessitam desse suporte.
 
 ## Integrantes
 
