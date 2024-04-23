@@ -105,7 +105,8 @@ Esta estrutura possui as seguintes funções:
 <h3><b>Retorno de Finalização de Pedidos</b></h3>
 <p>A página de Retorno de Finalização de Pedidos informa ao usuário que a reserva foi feita com sucesso e disponibiliza o contato do doador/emprestador.</p>
 
-![Página de finalização de pedidos](documentos/img/imagem_finalizacao_pedidos.JPG)
+![imagem_finalizacao_pedidos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/139081871/e727f2d3-6d9d-49e4-a725-0731bd064dd5)
+
 
 <figure> 
   <figcaption> Figura 10 - Finalização de Pedidos
