@@ -95,3 +95,15 @@ body
     color: rgb(0, 0, 0);   
 }
 
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+img bannerhome {
+    width: 1441px; 
+    height: 484px; 
+    left: 0px;
+    top: 115px; 
+    position: absolute
+}
