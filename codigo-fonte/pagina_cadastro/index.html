@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Mobilidade do bem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bloco-principal">
+        <form id="formulario" name="formulario">
+            <input type="text" maxlength="75" required placeholder="Nome Completo"> 
+            <br>
+            <input type="email" required placeholder="E-mail">
+            <br>
+            <input type="tel" name="" id="telefone" placeholder="Numero de telefone" maxlength="13">
+            <br>
+            <input type="number" required placeholder="CEP">
+            <br>
+            <label>Categoria de conta</label>
+            <br>
+            <select name="tipo-conta" id="tipo-conta" >
+                <option value="adquirir">Desejo adquirir produtos</option>
+                <option value="doar">Quero doar</option>
+                <option value="emprestar">Quero emprestar</option>
+            </select>
+            <br>
+            <input type="password" name="senha" id="senha" placeholder="Crie sua senha" required maxlength="20">
+            <br>
+            <input type="radio" id="termo" value="termo-aceito">
+            <label for="termo">Desejo receber notificações sobre novos produtos</label>
+            <br>
+            <input type="submit" value="Cadastrar">
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/intlTelInput.min.js"></script>
+<script>
+  const input = document.querySelector("#telefone");
+  window.intlTelInput(input, {
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/utils.js",
+  });
+</script>
+</body>
+</html>
