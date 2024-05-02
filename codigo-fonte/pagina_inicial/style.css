@@ -95,11 +95,6 @@ body
     color: rgb(0, 0, 0);   
 }
 
-img {
-    display: block;
-    max-width: 100%;
-  }
-
 img bannerhome {
     width: 1441px; 
     height: 484px; 
@@ -134,26 +129,6 @@ img bannerhome {
     left: 77px;
     top: 654px;
     background: #EB7D17;
-}
-
-#elemento3 {
-    width: 1442px;
-    height: 47px;
-    left: -1px;
-    top: 1024px;
-    background: #AEABAB;
-}
-
-#sub-elemento1 {
-    width: 445px;
-    height: 35.72px;
-    left: 639px;
-    top: 11.28px;
-    color: black;
-    font-size: 20px;
-    font-family: Josefin Sans;
-    font-weight: 400;
-    word-wrap: break-word;
 }
 
 #elemento4 {
