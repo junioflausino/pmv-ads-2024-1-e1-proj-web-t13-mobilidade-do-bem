@@ -88,3 +88,24 @@ header
     border: solid black 2px;
     border-left: 0px;
 } 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .produto {
+    width: 300px; /* Define uma largura fixa para cada produto */
+    margin: 10px; /* Espaço entre os produtos */
+    border: 1px solid #ccc; /* Borda para melhor visualização */
+    padding: 10px; /* Espaço interno ao redor do conteúdo dentro de cada produto */
+    text-align: center; /* Centraliza o texto dentro do produto */
+  }
+  
+  .produto img {
+    width: 100%; /* Faz a imagem preencher a largura do produto */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+    
