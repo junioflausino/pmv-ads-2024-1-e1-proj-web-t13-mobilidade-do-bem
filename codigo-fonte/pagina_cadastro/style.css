@@ -3,21 +3,67 @@ body
 {
     font-family:"Josefin Sans", sans-serif;
 
-
 }
-#bloco-principal
+
+
+.nav-list
 {
-    width:90rch;
-    background-color: rgb(115, 37, 224);
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 1%;
+    margin-left: 14%;
+    font-size: 23px;
+}   
+.nav-link
+{
+    color: white;
 
 }
 
-input,select
+.nav-list ul
 {
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+#pesquisa
+{
+    margin-left: 7%;
+
+}
+.login-icon
+{
+    margin-left: 3%;
+
+}
+
+form
+{
+    align-items: center;
+    justify-content: center
+}
+
+#formulario
+{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    margin-left: 35%;
     margin-top: 2%;
+    border-radius: 10px;
+}
+#btn-cadastrar
+{
+    margin-left: 25%;
+    background-color: rgb(1, 158, 9);
+    color: white;
+}
+#titulo-cadastrar
+{
+    padding-top: 1%;
+    margin-left: 22%;
+}
+input
+{
+    border-radius: 50px;
+
 }
