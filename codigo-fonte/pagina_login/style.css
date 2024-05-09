@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    font-family: "Josefin Sans",sans-serif;
+      
+}
+#blocoprincipal
+{
+    background-color: rgb(115, 37, 224);
+    width:90rch;
+    background-color: rgb(115, 37, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1%;
+}
