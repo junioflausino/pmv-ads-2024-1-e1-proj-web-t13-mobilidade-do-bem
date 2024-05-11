@@ -1,114 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-</style>
-header
-{
 
-    font-family:"Josefin Sans", sans-serif;
-
+header {
+    font-family: "Josefin Sans", sans-serif;
 }
 
-.nav-list
-{
+.nav-list {
     display: flex;
     align-items: center;
     margin-left: 14%;
     font-size: 23px;
-}   
-.nav-link
-{
+}
+
+.nav-link {
     color: white;
 
 }
 
-.nav-list ul
-{
+.nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    
+
 }
-#pesquisa
-{
+
+#pesquisa {
     margin-left: 7%;
-
 }
-.login-icon
-{
+
+.login-icon {
     margin-left: 3%;
-
 }
 
-body
-{
-    margin: 3em;
+body {
+    _margin: 3em;
 }
 
-.card-img-top
-{
+#banner-img {
+    width: 100%;
+}
+
+#card-carousel {
+    margin-top: 3.0em;
+}
+
+.card-img-top {
     width: 65%;
     border-radius: 50%;
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-.card
-{
+.card {
     padding: 1.5em .5em .5em;
     text-align: center;
     border-radius: 2em;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
 }
 
-.card-title
-{
+.card-title {
     font-family: josefin sans;
-      font-size: 1.5em;
+    font-size: 1.5em;
 }
 
-h2
-{
+h1 {
     background-color: rgb(115, 37, 224);
     color: rgb(255, 255, 255);
     font-family: josefin sans;
 }
 
-.container
-{
+.container {
     margin-top: 50px;
 }
 
-.bannerhome
-{
-    background-size: cover;
-    min height: 60vh;
-    position: relative;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
-}
-
-h1
-{
-    font-size:4rem;
-    font-family: Hachi Maru Pop;
-
-}
-
-.color-overlay
-{
-    position: absolute;
+.rodape {
+    background-color: #7426E0;
+    font-family: 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
+    font-size: 18px;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 18px 0px 18px 0px;
+    _position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    backgroud-color: rgba(0,0,0,.2);
 }
 
-@media (max-width: 76px) 
-{
-    .bannerhome{
-        min-height: 30vh;
-    }
-    h1{
-        font-size: calc(1.525rem+3.3vw);
-    }
+#footer-img {
+    width: 5%
 }
