@@ -25,14 +25,29 @@ var pedido = new Object();
 var user = new Object();
 var product = new Object();
 
-locaStorage.setItem("userName","Leticia teste");
+async function bancoDados () {
+   localStorage.setItem("userName","Leticia teste");
+}
 
-function(){
-  var divdadosReserva = document.getElementById("dadosReserva");
-  divdadosReserva.innerHTML = userNameTeste;
+localStorage.setItem("userName","Leticia teste");
+
+function teste(userName){
+  var divDadosReserva = document.getElementById("dadosReserva");
+  divDadosReserva.innerHTML = userName;
 }
 
 const userName = window.localStorage.getItem('userName')
 if (userName) {
-  const userNameTeste = JSON.parse(userName);
+  //const userNameTeste = JSON.parse(userName);
+  console.log(userName);
+  teste(userName);
 }
+
+var userObject = { 'name': 'Leticia', 'email': 'leticia@hotmail.com', 'phone': '35999999999' };
+localStorage.setItem('userObject', JSON.stringify(userObject));
+
+var retrievedUserObject = localStorage.getItem('userObject');
+
+var parsedRetrievedUserObject = JSON.parse(retrievedUserObject);
+console.log(parsedRetrievedUserObject);
+console.log(parsedRetrievedUserObject.name);
