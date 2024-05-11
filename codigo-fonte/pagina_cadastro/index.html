@@ -11,24 +11,23 @@
 </head>
 <body style="background-color: rgb(224, 224, 224);">
 
-    <header>
-
+<header>
         <nav class="navbar navbar-expand-lg" style="background-color: rgb(115, 37, 224);">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação" style="background-color: rgb(255, 255, 255);">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="" href="">
+                <a class="" href="../pagina_inicial/index.html">
                     <img class="collapse navbar-collapse" src="../img/logo.png" id="logo" alt="LOGO" width="165px" height="75px">
                 </a>
                 <div class="nav-list">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
     
-                        <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Anunciar</a></li>
+                        <li class="nav-item active"><a href="../pagina_inicial/index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a id="link-sobre" href="" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="../pagina_produtos/1produtos1.html" class="nav-link">Produtos</a></li>
+                        <li class="nav-item"><a href="../cadastro_de_produto/cdproduto.html" class="nav-link">Anunciar</a></li>
     
                     </ul>
                 </div>
@@ -38,7 +37,7 @@
 
                 </form>
                 <div class="login-icon navbar-brand">
-                    <a href=""><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
+                    <a href="../pagina_perfil/index.html"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
                 </div>
             </div>
         </nav>
@@ -63,7 +62,7 @@
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
-                <input id="cep"  class="form-control" type="tet" required pattern=".{8,}"  placeholder="CEP" name="cep" >
+                <input id="cep"   class="form-control" type="text" required maxlength="9" placeholder="CEP" name="cep" >
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
@@ -77,7 +76,7 @@
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
-                <input id="senha" class="form-control mb-3" type="password" placeholder="Senha" required maxlength="20">
+                <input id="senha" class="form-control mb-3" type="password" minlength="6"  placeholder="Senha"  required maxlength="20">
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="notificacao">
@@ -86,7 +85,7 @@
                 </label>
                 <br>
             </div>
-            <button id="btn-cadastrar" class="btn mb-3" type="submit" onclick="registro()">Cadastrar-se</button>
+            <button id="btn-cadastrar" class="btn mb-3" type="submit" >Cadastrar-se</button>
             <div class="form-group">
                 <a class="link-possui-conta" href="#" style="color: rgb(7, 0, 0); font-size: 17px; font-weight: 500;">Já tem uma conta? Entrar</a>
             </div>
