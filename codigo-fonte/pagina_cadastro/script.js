@@ -46,3 +46,24 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 });
+
+
+function formatarCEP(input) {
+    const cep = input.value.replace(/\D/g, ''); 
+    if (cep.length === 8) {
+        input.value = cep.substring(0, 5) + '-' + cep.substring(5); 
+    } else {
+        input.value = '';
+        alert("O CEP nao está no formato correto, formato correto  XXXXX-XXX")
+    }
+}
+
+function formatarTelefone(input)
+{
+    const telefone = input.value.replace(/\D/g,'');
+    if(telefone.length !== 11)
+        {
+            input.value = '';
+            alert("O telefone nao está no formato correto, formato correto  319xxxxxxxx")
+        }
+}
