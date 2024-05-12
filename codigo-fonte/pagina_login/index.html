@@ -57,7 +57,8 @@ height: 30px;
             {
             if(user.senha==Senha)
             {
-                alert ('Seja bem-vindo!')
+                var usuario = {nome : user.nome, email : user.email, conectado : true, tipoConta : user.Tipo_conta };
+                localStorage.setItem("logging",JSON.stringify(usuario));
                 location.href = "../pagina_perfil/perfil.html";
             }
              

@@ -62,7 +62,7 @@
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
-                <input id="cep" pattern="\d{5}-\d{3}" class="form-control" type="text" required maxlength="9" placeholder="CEP" name="cep" >
+                <input id="cep"  class="form-control" type="text" required maxlength="8" placeholder="CEP" name="cep" onblur="formatarCEP(this)" >
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
@@ -76,7 +76,7 @@
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
-                <input id="senha" class="form-control mb-3" type="password" minlength="6"  placeholder="Senha" onblur="formatarCEP(this)" required maxlength="20">
+                <input id="senha" class="form-control mb-3" type="password" minlength="6"  placeholder="Senha"  required maxlength="20">
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="notificacao">
