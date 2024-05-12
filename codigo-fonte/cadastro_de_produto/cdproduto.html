@@ -77,12 +77,12 @@
               <div class="caixas">
                 <div class="caixa">
                   <label>Título</label><br />
-                  <input type="text" minlength="6" name="titulo" id="titulo" required
+                  <input type="text" minlength="6" name="titulo" id="cad-titulo" required
                     placeholder="Título do Produto"><br />
                 </div>
                 <div class="caixa">
                   <label>Categoria</label><br />
-                  <select required name="area" id=area>
+                  <select required name="categoria" id=cad-categoria>
                     <option value="null" disabled selected hidden>Selecione</option>
                     <option value="Cadeiras de Rodas">Cadeiras de Rodas</option>
                     <option value="Bengalas">Bengalas</option>
@@ -91,29 +91,29 @@
                   </select>
                   <div class="caixa">
                     <label>Modalidade</label><br />
-                    <select required name="area" id=area>
+                    <select required name="modalidade" id=cad-modalidade>
                       <option value="null" disabled selected hidden>Selecione</option>
                       <option value="Empréstimo">Empréstimo</option>
                       <option value="Doação">Doação</option>
                     </select>
                     <div class="caixa">
                       <label>Tempo de Empréstimo</label><br />
-                      <input type="text" maxlength="4" name="ano" id="ano" required
+                      <input type="text" maxlength="4" name="tempo" id="cad-tempo" required
                         placeholder="Ex: 30 dias"></br>
                     </div>
                 <div class="caixa">
                   <label>Resumo</label><br />
                   <textarea required placeholder="Escreva sobre o produto" name="resumo"
-                    id="resumo"></textarea></br>
+                    id="cad-resumo"></textarea></br>
                 </div>
                 <div class="caixa">
                   <label>Imagem</label><br />
-                  <input type="text" minlength="6" name="titulo" id="titulo" required
+                  <input type="text" minlength="6" name="imagem" id="cad-imagem" required
                     placeholder="Insira a URL da imagem do seu produto"><br />
                 </div>
               </div>
               <div>
-                <button onclick=" return cadastrar()" class="cad-button" id="botao" type=”button”>Cadastrar</button>
+                <button onclick="verificarCampos()" class= "cad-button" id="botao" type="button">Cadastrar</button>
               </div>
             </div>
           </form>
