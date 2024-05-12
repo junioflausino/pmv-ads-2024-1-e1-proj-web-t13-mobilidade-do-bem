@@ -139,3 +139,33 @@ Abra um navegador de internet e informe a seguinte URL:https://icei-puc-minas-pm
 Ao preencher todos os campos, o cadastro será realizado com sucesso.
 
 <hr>
+
+### Tela de Cadastro (RF-010)
+Responsável: Letícia Moreira Pinto
+
+O acesso a tela de retorno de pedidos  poderá será realizado apenas por meio de redirecionamento da tela de pedidos. As estruturas de dados foram baseadas em HTML, CSS e JS.
+Exemplo da tela de cadastro: 
+![retorno_de_finalização_de_pedidos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/e4b4c093-de29-46aa-b252-fa2eddbe4df1)
+
+#### Requisito atendido
+
+RF-10:	A aplicação deve permitir o contato entre doadores, emprestadores e pessoas que buscam aparelhos de auxílio à mobilidade.
+
+#### Artefatos da funcionalidade
+
+●index.html
+
+●style.css
+
+●script.js
+
+#### Estrutura de Dados
+
+●[Retorno de Finalização de Pedidos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/retorno_finalizacao_pedidos)
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/retorno_finalizacao_pedidos/index.html
+
+<hr>
+
