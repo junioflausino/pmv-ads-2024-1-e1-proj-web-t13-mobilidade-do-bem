@@ -51,19 +51,28 @@ height: 30px;
          
         var Email= document.getElementById('E-mail').value;
         var Senha= document.getElementById('Senha').value;
+        var user = JSON.parse(localStorage.getItem(Email));
 
-        if (email == "mobilidadedobem@gmail.com" && senha == "1234"){
-            alert ('Seja bem-vindo!')
-            location.href = "perfil.html";
-      } else {
-        alert('E-mail ou senha incorretos')
-      }
-           
-
-
-
-    
-    }
+        if (JSON.parse(localStorage.getItem(Email)))
+            {
+            if(user.senha==Senha)
+            {
+                alert ('Seja bem-vindo!')
+                location.href = "../pagina_perfil/perfil.html";
+            }
+             
+            else 
+            {
+            alert('E-mail ou senha incorretos');
+            }
+            }
+            
+        else
+        {
+            alert('E-mail ou senha incorretos')
+        }
+        }
+        
 
 
           </script>
