@@ -134,7 +134,7 @@ RF-004:	A aplicação deve permitir o cadastro dos aparelhos auxiliares de mobil
 
 #### Instruções de acesso
 
-Abra um navegador de internet e informe a seguinte URL:(https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/cadastro_de_produto/index.html)
+Abra um navegador de internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/cadastro_de_produto/index.html
 
 Ao preencher todos os campos, o cadastro será realizado com sucesso.
 
