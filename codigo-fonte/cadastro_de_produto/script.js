@@ -9,6 +9,16 @@ function verificarCampos() {
     if (titulo === "" || categoria === "null" || modalidade === "null" || tempo === "" || resumo === "" || imagem === "") {
       alert("Por favor, preencha todos os campos.");
     } else {
+      let ListaRegistro = {
+        titulo : titulo,
+        categoria : categoria,
+        modalidade : modalidade,
+        tempo : tempo,
+        resumo :resumo,
+        imagem : imagem
+      };
+
+      localStorage.setItem(titulo,JSON.stringify(ListaRegistro));
       mostrarMensagem();
     }
   }
