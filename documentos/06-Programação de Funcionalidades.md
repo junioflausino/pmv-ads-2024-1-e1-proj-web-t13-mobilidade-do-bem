@@ -34,7 +34,7 @@ Ao clicar no icone no canto superior direito da tela, terá acesso a página de 
 
 <hr>
 
-### Tela de Cadastro (RF-002)
+### Tela de Login (RF-002)
 Responsável: Marcela de Oliveira Santos
 
 O acesso a tela de login poderá ser feito através do icone de um personagem no canto superior direito e após isso clicar em "Já tem uma conta? Entrar". As estruturas de dados foram baseadas em HTML e JS.
@@ -63,3 +63,42 @@ RF-002:	A aplicação deve permitir ao usuário fazer o login da sua conta.
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/pagina_inicial/index.html
 
 Ao clicar no icone no canto superior direito da tela, terá acesso a página de cadastro, apos isso clique em "Já tem uma conta? Entrar".
+
+
+<hr>
+
+### A aplicação deve permitir a diferenciação entre perfis (RF-003)
+Responsável: Nicolas Gabriel Neres Alexandre
+
+As paginas mudam de acordo com o tipo de conta que está acessando.
+Exemplo entre dois tipos de conta:
+
+Usuario que deseja adquirir
+![Screenshot_1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/d2c6d801-1a07-4166-8356-af3f43c8628c)
+
+Usuario que deseja doar
+![Screenshot_1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/6465e13a-45b0-469d-98ee-fd822662dbe6)
+
+
+#### Requisito atendido
+
+RF-003:	A aplicação deve permitir a diferenciação entre perfis de pessoas físicas candidatas a empréstimo ou doação, pessoas físicas e jurídicas doadoras e pessoas jurídicas que irão emprestar.
+
+
+#### Artefatos da funcionalidade
+
+●index.html
+
+●style.css
+
+●script.js
+
+#### Estrutura de Dados
+
+●[Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/menu_navegacao)
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/pagina_inicial/index.html
+
+Realize o cadastro e login, a pagina mudara de acordo com o tipo de usuario cadastrado.
