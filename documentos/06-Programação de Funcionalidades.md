@@ -102,3 +102,36 @@ RF-003:	A aplicação deve permitir a diferenciação entre perfis de pessoas f�
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/pagina_inicial/index.html
 
 Realize o cadastro e login, a pagina mudara de acordo com o tipo de usuario cadastrado.
+
+### Tela Cadastro de Produto (RF-004)
+Responsável: Junio Flausino Rocha
+
+O acesso a tela de cadastro de produto pode ser feito através do icone "Anunciar", no menu de navegação do site. As estruturas de dados foram baseadas em HTML, CSS e JS.
+Exemplo da tela: 
+[Cadastro de Produto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/164429443/358bee96-7727-4d8a-be23-86ae95f48427)
+
+
+#### Requisito atendido
+
+RF-004:	A aplicação deve permitir o cadastro dos aparelhos auxiliares de mobilidade.
+
+
+#### Artefatos da funcionalidade
+
+●index.html
+
+●style.css
+
+●script.js
+
+#### Estrutura de Dados
+
+●[Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/pagina_cadastro)
+
+#### Instruções de acesso
+
+Abra um navegador de internet e informe a seguinte URL:(https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/cadastro_de_produto/index.html)
+
+Ao preencher todos os campos, o cadastro será realizado com sucesso.
+
+<hr>
