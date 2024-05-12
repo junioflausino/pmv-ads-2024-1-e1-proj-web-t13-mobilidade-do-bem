@@ -95,7 +95,7 @@ RF-003:	A aplicação deve permitir a diferenciação entre perfis de pessoas f�
 
 #### Estrutura de Dados
 
-●[Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/menu_navegacao)
+●[Menu de navegação](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/menu_navegacao)
 
 #### Instruções de acesso
 
