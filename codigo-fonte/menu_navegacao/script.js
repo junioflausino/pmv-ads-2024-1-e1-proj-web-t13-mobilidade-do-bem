@@ -14,10 +14,14 @@ document.addEventListener('DOMContentLoaded', function(){
     var usuario = JSON.parse(localStorage.getItem('logging'))
     if(localStorage.getItem('logging'))
         {
-        if(usuario.conectado == false || usuario.tipoConta == 'adquirir')
+        if(usuario.conectado == false)
             {
                 document.getElementById("anunciar").style.display='none';
                 document.getElementById("sair").style.display='none';
+            }
+        if(usuario.tipoConta == 'adquirir')
+            {
+                document.getElementById("anunciar").style.display='none';
             }
         }
     else
