@@ -79,19 +79,18 @@ h1 {
     margin-top: 50px;
 }
 
-.rodape {
-    background-color: #7426E0;
-    font-family: 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
-    font-size: 18px;
-    color: #f5f5f5;
-    text-align: center;
+.rodape{
+    background-color: #7426E0; 
+    font-family: 'Josefin Sans','sans-serif';
+    font-size:18px;
+    color:#f5f5f5;
+    text-align: static;
     padding: 18px 0px 18px 0px;
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
-}
+    display: flex;
+    justify-content: center;
+}   
 
-#footer-img {
-    width: 5%
-}
