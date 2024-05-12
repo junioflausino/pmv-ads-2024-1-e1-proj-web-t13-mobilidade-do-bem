@@ -10,20 +10,23 @@ var produtos = [
       imagem: "caminho_da_imagem"
     }
   ];
-
-    //Função para printar no HTML
-function teste(converteBuscaProdutos){
-    var divDadosProdutosTitulo = document.getElementById("dadosProdutosTitulo");
-    divDadosProdutosTitulo.innerHTML = converteBuscaProdutos[0].titulo;
-}
-   
   //Salva e recupera os dados do pedido no localStorage
   localStorage.setItem('produtos', JSON.stringify(produtos));
   var buscaProdutos = localStorage.getItem('produtos');
   var converteBuscaProdutos = JSON.parse(buscaProdutos);
   console.log(converteBuscaProdutos);
   console.log(converteBuscaProdutos[0].titulo);   
-  teste(converteBuscaProdutos);
+
+
+    //Função para printar no HTML
+    var divDadosProdutosTitulo = document.getElementById("dadosProdutosTitulo");
+    function teste(converteBuscaProdutos){
+    divDadosProdutosTitulo.innerHTML = converteBuscaProdutos[0].titulo;
+}
+
+teste(converteBuscaProdutos);
+   
+
 
 
   
