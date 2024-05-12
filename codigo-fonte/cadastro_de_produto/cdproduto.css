@@ -6,7 +6,9 @@
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;}
+    vertical-align: baseline;
+
+}
 
     header
 {
@@ -47,7 +49,7 @@
 
 
   body {
-      background: whitesmoke;
+      background: rgb(255, 255, 255);
       font-family: 'Josefin Sans','sans-serif';
       color: #000000;
     }
@@ -184,8 +186,8 @@
     }
  
     #resumo {
-      height: 10rem;
-      width: 50rem;
+      height: 30rem;
+      width: 80rem;
       border: 1px solid #EB7D17;
       border-radius: 10px;
     }
@@ -199,7 +201,7 @@
   }
   
   textarea {
-    width: 80% !important;
+    width: 100% !important;
   }
   
   main {
