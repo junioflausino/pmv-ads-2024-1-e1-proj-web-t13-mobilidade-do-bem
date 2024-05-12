@@ -126,7 +126,7 @@ RF-004:	A aplicação deve permitir o cadastro dos aparelhos auxiliares de mobil
 
 #### Estrutura de Dados
 
-●[Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/pagina_cadastro)
+![Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/pagina_cadastro)
 
 #### Instruções de acesso
 
