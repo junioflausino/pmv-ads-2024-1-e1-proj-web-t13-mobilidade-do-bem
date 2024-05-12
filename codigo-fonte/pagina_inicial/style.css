@@ -1,39 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-header
-{
+header {
 
-    font-family:"Josefin Sans", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 
 }
 
-.nav-list
-{
+.nav-list {
     display: flex;
     align-items: center;
     margin-left: 14%;
     font-size: 23px;
-}   
-.nav-link
-{
+}
+
+.nav-link {
     color: white;
 
 }
 
-.nav-list ul
-{
+.nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    
+
 }
-#pesquisa
-{
+
+#pesquisa {
     margin-left: 7%;
 
 }
-.login-icon
-{
+
+.login-icon {
     margin-left: 3%;
 
 }
@@ -51,13 +48,14 @@ body {
 }
 
 .card-img-top {
-    width: 65%;
-    border-radius: 50%;
+    width: 80%;
+    border-radius: 80%;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 .card {
+    background-color: #EB7D17;
     padding: 1.5em .5em .5em;
     text-align: center;
     border-radius: 2em;
@@ -66,7 +64,8 @@ body {
 
 .card-title {
     font-family: josefin sans;
-    font-size: 1.5em;
+
+    color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -75,15 +74,16 @@ h1 {
     font-family: josefin sans;
 }
 
-.container {
+.container-fluid {
     margin-top: 50px;
 }
 
-.rodape{
-    background-color: #7426E0; 
-    font-family: 'Josefin Sans','sans-serif';
-    font-size:18px;
-    color:#f5f5f5;
+
+.rodape {
+    background-color: #7426E0;
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-size: 18px;
+    color: #f5f5f5;
     text-align: static;
     padding: 18px 0px 18px 0px;
     position: static;
@@ -92,5 +92,4 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-}   
-
+}
