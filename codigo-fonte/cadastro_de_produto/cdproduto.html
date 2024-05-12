@@ -1,52 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mobilidade do Bem</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="cdproduto.css">
 </head>
+
 <body>
-    <header>
 
-        <nav class="navbar navbar-expand-lg" style="background-color: rgb(115, 37, 224);">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação" style="background-color: rgb(255, 255, 255);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #7426E0;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação" style="background-color: rgb(255, 255, 255);">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="" href="">
-                    <img class="collapse navbar-collapse" src="../img/logo.png" id="logo" alt="LOGO" width="165px" height="75px">
-                </a>
-                <div class="nav-list">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-    
-                        <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Anunciar</a></li>
-    
-                    </ul>
-                </div>
-                <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
-                    <button class="btn  my-2 my-sm-0">Pesquisar</button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
+            <a class="" href="">
+                <img class="collapse navbar-collapse" src="../img/logo.png" id="logo" alt="LOGO" width="165px" height="75px">
+            </a>
+            <div class="nav-list">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                </form>
-                <div class="login-icon navbar-brand">
-                    <a href=""><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
-                </div>
+                    <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Anunciar</a></li>
+
+                </ul>
             </div>
-        </nav>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
+                <button class="btn  my-2 my-sm-0">Pesquisar</button>
+
+            </form>
+            <div class="login-icon navbar-brand">
+                <a href=""><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <section class="menu">
+      <div class="profile-sidebar">
+        <div class="profile-usertitleU">
+          <div class="profile-usertitle-name">
+            Olá, Usuário
+          </div>
+        </div>
+    </div>
+
+        <div class="profile-usermenu">
+          <ul class="nav">
+            <ol class="active">
+              <li>Minhas Reservas</a>
+            </li>
+            <li>
+                Produtos Cadastrados</a>
+            </li>
+            <li>
+                Sair</a>
+            </li>
+          </ol>
+        </div>
+    </section>
+
+    <main>
+      <div style="overflow-x: auto;" class="col-md-9">
+        <div class="profile-content">
+            <div class="cadastrar">
+              <h1 class="cad-um">Cadastro de Produto</h1>
+              <div class="caixas">
+                <div class="caixa">
+                  <label>Título</label><br />
+                  <input type="text" minlength="6" name="titulo" id="titulo" required
+                    placeholder="Título do Produto"><br />
+                </div>
+                <div class="caixa">
+                  <label>Categoria</label><br />
+                  <select required name="area" id=area>
+                    <option value="null" disabled selected hidden>Selecione</option>
+                    <option value="Cadeiras de Rodas">Cadeiras de Rodas</option>
+                    <option value="Bengalas">Bengalas</option>
+                    <option value="Andadores">Andadores</option>
+                    <option value="Outros">Outros</option>
+                  </select>
+                  <div class="caixa">
+                    <label>Modalidade</label><br />
+                    <select required name="area" id=area>
+                      <option value="null" disabled selected hidden>Selecione</option>
+                      <option value="Empréstimo">Empréstimo</option>
+                      <option value="Doação">Doação</option>
+                    </select>
+                    <div class="caixa">
+                      <label>Tempo de Empréstimo</label><br />
+                      <input type="text" maxlength="4" name="ano" id="ano" required
+                        placeholder="Ex: 30 dias"></br>
+                    </div>
+                <div class="caixa">
+                  <label>Resumo</label><br />
+                  <textarea required placeholder="Escreva sobre o produto" name="resumo"
+                    id="resumo"></textarea></br>
+                </div>
+                <div class="caixa">
+                  <label>Imagem</label><br />
+                  <input type="text" minlength="6" name="titulo" id="titulo" required
+                    placeholder="Insira a URL da imagem do seu produto"><br />
+                </div>
+              </div>
+              <div>
+                <button onclick=" return cadastrar()" class="cad-button" id="botao" type=”button”>Cadastrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer class="rodape"> 
-        <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">
-        </div><p>| Todos os direitos reservados</p>
-    </footer> 
-</body> 
+      <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">
+      </div><p>| Todos os direitos reservados</p>
+</body>
+
 </html>
