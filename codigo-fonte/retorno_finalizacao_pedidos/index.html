@@ -17,40 +17,49 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="" href="">
-                    <img class="collapse navbar-collapse" src="img/logo.png" id="logo" alt="LOGO" width="165px" height="75px">
+                <a class="" href="../pagina_inicial/index.html">
+                    <img class="collapse navbar-collapse" src="../img/logo.png" id="logo" alt="LOGO" width="165px" height="75px">
                 </a>
                 <div class="nav-list">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
     
-                        <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Anunciar</a></li>
+                        <li class="nav-item active"><a href="../pagina_inicial/index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a id="link-sobre" href="" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="../pagina_produtos/index.html" class="nav-link">Produtos</a></li>
+                        <li class="nav-item"><a href="../cadastro_de_produto/cdproduto.html" class="nav-link">Anunciar</a></li>
     
                     </ul>
                 </div>
                 <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
-                    <button class="btn btn-outline-success my-2 my-sm-0">Pesquisar</button>
+                    <button class="btn  my-2 my-sm-0">Pesquisar</button>
 
                 </form>
                 <div class="login-icon navbar-brand">
-                    <a href=""><img id="icone" src="img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
+                    <a href="../pagina_cadastro/index.html"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
                 </div>
             </div>
         </nav>
     </header>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
-        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-        <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
-      </svg>    <p>Produto reservado com sucesso </p>
-    <div id="dadosPedidosNome">        
-    </div>
-    <div id="dadosPedidosEmail">        
-    </div>
-    <div id="dadosPedidosTelefone">        
-    </div>
+    <div class="container">
+        <div class="row">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+          </svg>    <p>Produto reservado com sucesso </p></h1>
+        </div>
+        <h2><div id="dadosPedidosNome">        
+        </div>
+        <div id="dadosPedidosEmail">        
+        </div>
+        <div id="dadosPedidosTelefone">        
+        </div></h2>
+      </div>
+
+    <footer class="rodape"> 
+        <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">
+        </div><p>| Todos os direitos reservados</p>
+    </footer>  
 
     <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
