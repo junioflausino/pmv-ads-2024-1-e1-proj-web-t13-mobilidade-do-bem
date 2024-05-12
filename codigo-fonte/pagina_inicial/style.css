@@ -1,34 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-header {
-    font-family: "Josefin Sans", sans-serif;
+header
+{
+
+    font-family:"Josefin Sans", sans-serif;
+
 }
 
-.nav-list {
+.nav-list
+{
     display: flex;
     align-items: center;
     margin-left: 14%;
     font-size: 23px;
-}
-
-.nav-link {
+}   
+.nav-link
+{
     color: white;
 
 }
 
-.nav-list ul {
+.nav-list ul
+{
     display: flex;
     justify-content: center;
     list-style: none;
-
+    
 }
-
-#pesquisa {
+#pesquisa
+{
     margin-left: 7%;
-}
 
-.login-icon {
+}
+.login-icon
+{
     margin-left: 3%;
+
 }
 
 body {
