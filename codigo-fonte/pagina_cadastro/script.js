@@ -50,11 +50,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function formatarCEP(input) {
     const cep = input.value.replace(/\D/g, ''); 
-    if (cep.length === 8) {
+    if (cep.length == 8) {
         input.value = cep.substring(0, 5) + '-' + cep.substring(5); 
     } else {
         input.value = '';
-        alert("O CEP nao está no formato correto, formato correto  XXXXX-XXX")
+        alert("O CEP nao está no formato correto, formato correto  XXXXXXXX")
     }
 }
 
