@@ -140,11 +140,38 @@ Ao preencher todos os campos, o cadastro será realizado com sucesso.
 
 <hr>
 
+### Tela de Produto (RF-008)
+Responsável: Daianne Paula Moreira Pinto
+
+O acesso a tela de produtos pode ser feito através do menu de navegação do site. As estruturas de dados foram baseadas em HTML, CSS e JS.
+Exemplo da tela de produto: 
+![pagina_produtos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/139081871/26924814-41e7-4917-8413-53348184586e)
+
+#### Requisito atendido
+
+RF-08:	A aplicação deve permitir a reserva de equipamentos.
+
+#### Artefatos da funcionalidade
+
+●index.html
+
+●style.css
+
+●script.js
+
+#### Estrutura de Dados
+
+●[Produtos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/tree/main/codigo-fonte/pagina_produtos)
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/codigo-fonte/pagina_produtos/index.html
+
 ### Tela de Cadastro (RF-010)
 Responsável: Letícia Moreira Pinto
 
 O acesso a tela de retorno de pedidos  poderá será realizado apenas por meio de redirecionamento da tela de pedidos. As estruturas de dados foram baseadas em HTML, CSS e JS.
-Exemplo da tela de cadastro: 
+Exemplo da tela de retorno de finalização de pedidos: 
 ![retorno_de_finalização_de_pedidos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/e4b4c093-de29-46aa-b252-fa2eddbe4df1)
 
 #### Requisito atendido
