@@ -26,7 +26,7 @@
     
                         <li class="nav-item active"><a href="../pagina_inicial/index.html" class="nav-link">Inicio</a></li>
                         <li class="nav-item"><a id="link-sobre" href="" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="../pagina_produtos/1produtos1.html" class="nav-link">Produtos</a></li>
+                        <li class="nav-item"><a href="../pagina_produtos/index.html" class="nav-link">Produtos</a></li>
                         <li class="nav-item"><a href="../cadastro_de_produto/cdproduto.html" class="nav-link">Anunciar</a></li>
     
                     </ul>
@@ -37,7 +37,7 @@
 
                 </form>
                 <div class="login-icon navbar-brand">
-                    <a href="../pagina_perfil/index.html"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
+                    <a href="../pagina_cadastro/index.html"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
                 </div>
             </div>
         </nav>
@@ -58,11 +58,11 @@
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
-                <input id="telefone" class="form-control" type="number" required maxlength="13" placeholder="Telefone">
+                <input id="telefone" class="form-control" type="text" required maxlength="11" placeholder="Telefone" onblur="formatarTelefone(this)">
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
-                <input id="cep"   class="form-control" type="text" required maxlength="9" placeholder="CEP" name="cep" >
+                <input id="cep"  class="form-control" type="text" required maxlength="8" placeholder="CEP" name="cep" onblur="formatarCEP(this)" >
             </div>
             <br>
             <div class="form-group col-sm-12 mb-1">
@@ -87,7 +87,7 @@
             </div>
             <button id="btn-cadastrar" class="btn mb-3" type="submit" >Cadastrar-se</button>
             <div class="form-group">
-                <a class="link-possui-conta" href="#" style="color: rgb(7, 0, 0); font-size: 17px; font-weight: 500;">Já tem uma conta? Entrar</a>
+                <a class="link-possui-conta" href="../pagina_login/index.html" style="color: rgb(7, 0, 0); font-size: 17px; font-weight: 500;">Já tem uma conta? Entrar</a>
             </div>
         
         </form>

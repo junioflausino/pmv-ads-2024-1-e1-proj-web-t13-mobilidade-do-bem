@@ -1,53 +1,93 @@
-/* const produtoReservado = {
+// Criando o mock de usuarios
+var usuarios = [
+  usuario1 = {
+    nomeCompleto: "jodisclayton",
+    email: "jodisclayton@hotmail.com",
+    telefone: "123",
+    cep: "123",
+    tipoConta: "adquirir",
+    senha: "123"
+  }
+];
 
-  ,user {    
-  userName: "Leticia teste",
-  userEmail: "leticiamoreira789@gmail.com",
-  userTel: "35997442500",
-  userCategory: "tomador",
-  userPassword: "7788le",
-  notification: "true",
-},
+/* COMO INSERIR UM USUARIO NOVO *
+usuario2 = {
+  nomeCompleto: "b",
+  email: "b",
+  telefone: "b",
+  cep: "b",
+  tipoConta: "b",
+  senha: "b"
+}
+usuarios.push(usuario2);
+***********************************/
 
-  product {
-    productName: "cadeira de rodas 2000",
-    productType: "cadeira de rodas",
-    productCategory: "emprestimo",
-    productLoanTime: "2 anos",
-    productAdress: "37714-477",
-    productDescription: "A cadeira de rodas 2000 é semi-nova, regulável e automática, é dobrável e está em perfeitas condições de uso.",
-    productImg: "img class="img-fluid fotocadeirarodas" src="img/Screenshot_1.png"",
+// Criando o mock de produtos
+var produtos = [
+  produto1 = {
+    titulo: "jodisclayton",
+    categoria: "jodisclayton@hotmail.com",
+    modalidade: "123",
+    tempoEmprestimo: "123",
+    endereco: "adquirir",
+    descricao: "123",
+    imagem: "caminho_da_imagem"
+  }
+];
 
-  }, 
-}*/
+/* COMO INSERIR UM PRODUTO NOVO *
+  produto2 = {
+    titulo: "jodisclayton",
+    categoria: "jodisclayton@hotmail.com",
+    modalidade: "123",
+    tempoEmprestimo: "123",
+    endereco: "adquirir",
+    descricao: "123",
+    imagem: "caminho_da_imagem"
+  }
+produtos.push(produto2);
+***********************************/
 
-var pedido = new Object();
-var user = new Object();
-var product = new Object();
+// Criando o mock de pedidos
+var pedidos = [
+  pedidos1={
+    usuario: usuarios[0],
+    produto: produtos[0]
+  }
+];
 
-async function bancoDados () {
-   localStorage.setItem("userName","Leticia teste");
+console.log(pedidos);
+
+/* COMO INSERIR UM PEDIDO NOVO *
+  pedidos2={
+    usuario: usuarios[1],
+    produto: produtos[1]
+  }
+pedidos.push(pedidos2);
+***********************************/
+
+//Função para printar no HTML
+function teste(converteBuscaPedidos){
+  var divDadosPedidosNome = document.getElementById("dadosPedidosNome");
+  divDadosPedidosNome.innerHTML = converteBuscaPedidos[0].usuario.nomeCompleto;
+
+  var divDadosPedidosEmail = document.getElementById("dadosPedidosEmail");
+  divDadosPedidosEmail.innerHTML = converteBuscaPedidos[0].usuario.email;
+  
+  var divDadosPedidosTelefone = document.getElementById("dadosPedidosTelefone");
+  divDadosPedidosTelefone.innerHTML = converteBuscaPedidos[0].usuario.telefone;
 }
 
-localStorage.setItem("userName","Leticia teste");
+//Salva e recupera os dados do pedido no localStorage
+localStorage.setItem('pedidos', JSON.stringify(pedidos));
+var buscaPedidos = localStorage.getItem('pedidos');
+var converteBuscaPedidos = JSON.parse(buscaPedidos);
 
-function teste(userName){
-  var divDadosReserva = document.getElementById("dadosReserva");
-  divDadosReserva.innerHTML = userName;
-}
+teste(converteBuscaPedidos);
 
-const userName = window.localStorage.getItem('userName')
-if (userName) {
-  //const userNameTeste = JSON.parse(userName);
-  console.log(userName);
-  teste(userName);
-}
+/* Teste no console
+console.log(converteBuscaPedidos[0]);
+console.log(converteBuscaPedidos[0].nomeCompleto);
+console.log(converteBuscaPedidos[0].email);
+console.log(converteBuscaPedidos[0].telefone);*/
 
-var userObject = { 'name': 'Leticia', 'email': 'leticia@hotmail.com', 'phone': '35999999999' };
-localStorage.setItem('userObject', JSON.stringify(userObject));
-
-var retrievedUserObject = localStorage.getItem('userObject');
-
-var parsedRetrievedUserObject = JSON.parse(retrievedUserObject);
-console.log(parsedRetrievedUserObject);
-console.log(parsedRetrievedUserObject.name);
