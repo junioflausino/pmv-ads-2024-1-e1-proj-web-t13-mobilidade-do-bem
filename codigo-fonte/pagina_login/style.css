@@ -1,6 +1,34 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 body
 {
     font-family:"Josefin Sans", sans-serif;
 
 }
+=======
+*{
+    box-sizing: border-box;
+
+}
+
+
+body{
+    width:100%;
+    height:100%;
+
+}
+.formulario_login
+{
+width: 300px;
+margin: 200px auto;
+text-align: center;
+}
+input
+{
+display: block;
+margin: 10px auto;
+width: 250px ;
+height: 30px;
+
+}
+>>>>>>> ab159a36bc67558ab58be7daa4d4db53410460da
