@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="../menu_navegacao/script.js"></script>
 
 </head>
 
 <body>
     <header>
-
         <nav class="navbar navbar-expand-lg" style="background-color: rgb(115, 37, 224);">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação"
@@ -22,71 +22,66 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="" href="">
-                    <img class="collapse navbar-collapse" src="img/logo.png" id="logo" alt="LOGO" width="165px"
+                <a class="" href="../pagina_inicial/index.html">
+                    <img class="collapse navbar-collapse" src="../img/logo.png" id="logo" alt="LOGO" width="165px"
                         height="75px">
                 </a>
                 <div class="nav-list">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-                        <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Anunciar</a></li>
+                        <li class="nav-item active"><a href="../pagina_inicial/index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a id="link-sobre" href="" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="../pagina_produtos/index.html" class="nav-link">Produtos</a></li>
+                        <li id="anunciar" class="nav-item"><a href="../cadastro_de_produto/index.html   " class="nav-link">Anunciar</a></li>
 
                     </ul>
                 </div>
                 <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
-                    <button class="btn btn-outline-success my-2 my-sm-0">Pesquisar</button>
+                    <button class="btn  my-2 my-sm-0">Pesquisar</button>
 
                 </form>
                 <div class="login-icon navbar-brand">
-                    <a href=""><img id="icone" src="img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
+                    <a id="sair" href=""  onclick="sair()">Sair</a>
+                    <a href="../pagina_cadastro/index.html"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="bannerhome" style="background-image:url('./img/bannerhome.png');">
-    <div class="color-overlay d-flex justify-content-center align-itens-center">
-        <h1>Mobilidade a um click</h1>
 
-    </div>
-    </div>
+    <img class="img-fluid bannerhome" src="../img/bannerhome.png" alt="mobilidade a um click" id="banner-img" />
 
 
-    <img class="img-fluid bannerhome" src="img/bannerhome.png" alt="mobilidade a um click" />
-
-
-    <div class="container mt-lg-0">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3" id="card-carousel">
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+                <div class="card h-100 w-100">
+                    <img src="../img/andador.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Andadores</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+                <div class="card h-100 w-100">
+                    <img src="../img/bancodebanho.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Bancos de Banho</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+                <div class="card h-100 w-100">
+                    <img src="../img/bengala.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Bengalas</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+                <div class="card h-100 w-100">
+                    <img src="../img/cadeiraderoda.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Cadeira de Rodas</h5>
                     </div>
@@ -94,29 +89,56 @@
             </div>
 
             <div class="col">
-                <div class="card h-100">
-                    <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+                <div class="card h-100 w-100">
+                    <img src="../img/muletas.jpg" alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Muletas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 w-100">
+                    <img src="../img/camasecolchoes.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Camas e Colchões</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container-fluid">
         <div class="row row-cols-2 row-cols-md-1 row-cols-lg-2 g-2">
             <div class="col">
-                <h2>Sobre Nós</h2>
-                <p>No Brasil, muitas pessoas enfrentam dificuldades para acessar equipamentos de mobilidade física de qualidade, seja devido à escassez desses dispositivos no mercado ou aos preços elevados. Além disso, é comum que muitas pessoas acumulem equipamentos que não necessitam mais, levando a sua deterioração e perda ao longo do tempo. 
-                    Pensando nisso alunos do curso de Análise e Desenvolvimento de Sistema da PUC Minas, desenvolveram o “Mobilidade do Bem” que tem como objetivo ser uma plataforma digital acessível, gratuita e eficiente que facilite a interligação entre indivíduos que possuam equipamentos de mobilidade, como cadeiras de rodas, muletas, andadores, entre outros, e pessoas que necessitam desse suporte de forma temporária ou permanente.</p>
+                <h1 id="sobre">Sobre Nós</h1> <!-- Nao modificar esse ID por favor -->
+                <p>No Brasil, muitas pessoas enfrentam dificuldades para acessar equipamentos de mobilidade
+                    física de
+                    qualidade, seja devido à escassez desses dispositivos no mercado ou aos preços elevados.
+                    Além disso,
+                    é comum que muitas pessoas acumulem equipamentos que não necessitam mais, levando a sua
+                    deterioração
+                    e perda ao longo do tempo. 
+                    Pensando nisso alunos do curso de Análise e Desenvolvimento de Sistema da PUC Minas,
+                    desenvolveram o
+                    “Mobilidade do Bem” que tem como objetivo ser uma plataforma digital acessível, gratuita e
+                    eficiente
+                    que facilite a interligação entre indivíduos que possuam equipamentos de mobilidade, como
+                    cadeiras
+                    de rodas, muletas, andadores, entre outros, e pessoas que necessitam desse suporte de forma
+                    temporária ou permanente.</p>
             </div>
             <div class="col">
-                <img class="img-fluid fotocadeirarodas" src="img/Screenshot_1.png" alt="mobilidade a um click" />
+                <img class="img-fluid fotocadeirarodas" src="../img/mulhercadeiraderodas.png"
+                    alt="mobilidade a um click" />
             </div>
         </div>
     </div>
     </div>
+
+    <footer class="rodape"> 
+        <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">
+        </div><p>| Todos os direitos reservados</p>
+    </footer> 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
