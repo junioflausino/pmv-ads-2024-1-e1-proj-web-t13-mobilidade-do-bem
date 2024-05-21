@@ -6,11 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="../menu_navegacao/script.js"></script>
+<link rel="stylesheet"href="../menu_navegacao/style.css">
+
 </head>
 <body>
-   <h2>Perfil</h2> 
+    <body style="background-color: rgb(224, 224, 224);">
+
+   
    <form id="formulario" name="formulario"> 
-    
+    <h4>Perfil</h4> 
     <input type="text" name="" id="name" placeholder="Nome completo"><br>
     <input type="text" name="" id="E-mail" placeholder="E-mail"><BR>
     <input type="tel" name="" id="telefone" placeholder= "Numero de telefone" maxlength="13"><br>
@@ -22,4 +27,73 @@
         <option value="doar">Quero doar</option>
         <option value="emprestar">Quero emprestar</option>
     </select>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(115, 37, 224);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação" style="background-color: rgb(255, 255, 255);">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="" href="../pagina_inicial/index.html">
+                    <img class="collapse navbar-collapse" src="../img/logo.png" id="logo" alt="LOGO" width="165px" height="75px">
+                 </a>
+                 <div class="nav-list">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    
+                        <li class="nav-item active"><a href="../pagina_inicial/index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a id="link-sobre" href="" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="../pagina_produtos/index.html" class="nav-link">Produtos</a></li>
+                        <li id="anunciar" class="nav-item"><a href="../cadastro_de_produto/cdproduto.html" class="nav-link">Anunciar</a></li>
+
+                    </ul>
+                </div>
+                <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
+                    <button class="btn  my-2 my-sm-0">Pesquisar</button>
+
+                </form>
+                <div class="login-icon navbar-brand">
+                    <a id="sair" href=""  onclick="sair()">Sair</a>
+                    <a href="../pagina_cadastro/index.html"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>
+                </div>
+            </div>
+        </nav>
+
+        <footer class="rodape">
+            <img width="15"
+            src="../img/perfil.png" alt="logomarca">
+            <p>Copyright &#169 2024 | Todos os direitos reservados</p>
+        </footer>   
+
+
+<style> 
+
+
+     *{
+        box-sizing: border-box;
+
+    }
+
+    body{
+        width:100%;
+        height:100%;
+
+}
+form
+{
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+}
+input
+{
+display: block;
+margin: 10px auto;
+width: 250px ;
+height: 30px;
+       }
+
+   
+    </style>
+
+    
     
