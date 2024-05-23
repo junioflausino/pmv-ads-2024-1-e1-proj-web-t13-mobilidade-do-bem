@@ -1,57 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 header
 {
-
+    padding: 0px;
+    margin: 0;
+    box-shadow: 2px 3px 10px black;
+    background-color: rgb(115, 37, 224);
     font-family:"Josefin Sans", sans-serif;
+    margin-left: -20px;
+    margin-top: -20px;
+    height: 125px;
+    width: 102%;
+}
+.nav-bar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
 
 }
-
+#logo
+{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    
+}
 .nav-list
 {
     display: flex;
     align-items: center;
-    margin-left: 14%;
-    font-size: 23px;
+    margin-left: -30px;
 }   
-.nav-link
-{
-    color: white;
-
-}
 
 .nav-list ul
 {
     display: flex;
     justify-content: center;
     list-style: none;
-    
 }
-#pesquisa
+.nav-item
 {
-    margin-left: 7%;
+    margin: 0 20px;
 
 }
 .login-icon
 {
-    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 50px;
 
 }
-
-.rodape{
-    background-color: #7426E0; 
-    font-family: 'Josefin Sans','sans-serif';
-    font-size:18px;
-    color:#f5f5f5;
-    text-align: static;
-    padding: 18px 0px 18px 0px;
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+#icone
+{
+    margin-left: 30px;
+    margin-top: 75%;
+}
+.nav-link
+{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 400;
+    margin-right: 10px;
+}
+#pesquisa
+{
+    height: 20px;
     display: flex;
-    justify-content: center;
-}   
-
+    align-items: center;
+    margin-top: 42px;
+    width: 130px;
+    border:solid black 2px;
+}
 #botao
 {
     background-image: url('img/pesquisa.png'); 
@@ -68,6 +89,10 @@ header
     border-left: 0px;
 } 
 
+.col-md-4
+{
+background-color: fuchsia
+}
 
-
-    
+.col-md-8
+{background-color:gray;}
