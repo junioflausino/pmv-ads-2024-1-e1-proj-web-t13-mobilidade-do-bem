@@ -28,6 +28,7 @@ function exibeProdutos(converteBuscaProdutos) {
   divDadosProdutosModalidade.innerHTML = converteBuscaProdutos[0].modalidade;
 }
 
+
 function reservar(id) {
   verificaLogin();
 
