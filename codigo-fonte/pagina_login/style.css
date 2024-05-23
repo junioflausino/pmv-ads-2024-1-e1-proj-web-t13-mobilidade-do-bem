@@ -5,7 +5,6 @@ body
 
 }
 
-
 .nav-list
 {
     display: flex;
@@ -36,24 +35,17 @@ body
     margin-left: 6%;
 
 }
-
 .form
 {
-    align-items: center;
-    justify-content: center
-   
-}
+    border: 1px solid #7426E0;
 
-#formulario
+
+}
+ .link-nao-possui-conta
 {
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    margin-left: 35%;
-    margin-top: 2%;
-    border-radius: 10px;
+    margin-left: 10%;
+    
 }
-
-
 .rodape{
     background-color: #7426E0; 
     font-family: 'Josefin Sans','sans-serif';
