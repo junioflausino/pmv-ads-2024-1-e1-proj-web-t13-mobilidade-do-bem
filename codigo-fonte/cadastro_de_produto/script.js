@@ -1,3 +1,4 @@
+
 function verificarCampos() {
     var titulo = document.getElementById('cad-titulo').value;
     var categoria = document.getElementById('cad-categoria').value;
