@@ -13,7 +13,7 @@
 ];
 */
 //Salva e recupera os dados do pedido no localStorage
-var buscaProdutos = localStorage.getItem('Andador Teste')
+var buscaProdutos = localStorage.getItem('Andador Teste');
 var converteBuscaProdutos = JSON.parse(buscaProdutos);
 console.log(buscaProdutos);   
 

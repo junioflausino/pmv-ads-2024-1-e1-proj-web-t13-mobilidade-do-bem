@@ -1,3 +1,10 @@
+import { printarNaTela, createProduto, variavelGlobal } from "../funcoes_js/crud_produtos.js";
+
+var botao = document.getElementById('botao');
+botao.onclick = () => {
+  printarNaTela();
+  verificarCampos();  
+}
 
 function verificarCampos() {
     var titulo = document.getElementById('cad-titulo').value;
@@ -19,7 +26,7 @@ function verificarCampos() {
         imagem : imagem
       };
 
-      localStorage.setItem(titulo,JSON.stringify(ListaRegistro));
+      localStorage.setItem('Produtos', JSON.stringify(ListaRegistro));
       mostrarMensagem();
     }
   }
