@@ -1,49 +1,59 @@
-// Criando o mock de produtos
-/*var produtos = [
-  produto1 = {
-    id: 1,
-    titulo: "Andador",
-    categoria: "Andadores",
-    modalidade: "Doação",
-    tempoEmprestimo: "1 ano",
-    endereco: "Poços de Caldas MG",
-    descricao: "Andador semi-novo, em ótimo estado de uso",
-    imagem: "caminho_da_imagem"
-  }
-];
-*/
-//Salva e recupera os dados do pedido no localStorage
-var buscaProdutos = localStorage.getItem('Andador Teste');
-var converteBuscaProdutos = JSON.parse(buscaProdutos);
-console.log(buscaProdutos);   
-
 //Função para printar no HTML
-var divDadosProdutosTitulo = document.getElementById("dadosProdutosTitulo");
-var divDadosProdutosEndereco = document.getElementById("dadosProdutosEndereco");
-var divDadosProdutosModalidade = document.getElementById("dadosProdutosModalidade");
+function exibeProdutos() {
+  var produtosRegistrados = buscarProdutos(); // Busca os produtos cadastrados na memória
+  var divRow = document.getElementById("div-row"); // Busca a div "div-row" que está declarada no index.html
 
-function exibeProdutos(converteBuscaProdutos) {
-  divDadosProdutosTitulo.innerHTML = converteBuscaProdutos;
-  //divDadosProdutosEndereco.innerHTML = converteBuscaProdutos[0].endereco;
-  //divDadosProdutosModalidade.innerHTML = converteBuscaProdutos[0].modalidade;
+  if (produtosRegistrados) {
+    // Salve a imagem com o caminho relativo, exemplo: ../img/andador.png ou ../img/bengala.png
+    // Se a variável produtosRegistrados estiver preenchidas com produtos
+    var produtosParaMostrarNaTela = produtosRegistrados.map((elemento) => {
+      // Array.map() funciona como um for, e para cada "elemento" ele ira executar uma instrução
+      return `
+      <div class="col-md-4 produto">
+        <img src="${elemento.imagem}" class="img-fluid rounded" alt="${elemento.categoria}">
+        <h3>${elemento.titulo}</h3>
+        <p>${elemento.resumo}</p>
+        <p>${elemento.modalidade}</p>
+        <p>tempo: ${elemento.tempo} dias</p>
+        <button type="button" class="btn btn-light" onclick="reservar()">Reservar</button>
+      </div>
+      `; // A instrução é criar uma div contendo todo o html de um produto
+    }); // Clicar em Reservar ainda não foi implementado
+
+    divRow.innerHTML = produtosParaMostrarNaTela.join(""); // Insere as divs criadas no HTML da pagina index.html
+  } else {
+    var nenhumProdutoCadastradoAinda = `
+      <div style="position:center">
+        <h3>Ainda não temos produtos cadastrados</h3>
+      </div>
+    `;
+
+    divRow.innerHTML = nenhumProdutoCadastradoAinda;
+  }
 }
 
-
 function reservar(id) {
+  return alert("Em desenvolvimento!");
+  
   verificaLogin();
 
-  var produtoReservadoPeloId = converteBuscaProdutos.find((element) => element.id === parseInt(id));
-  sessionStorage.setItem('reservarProduto', JSON.stringify(produtoReservadoPeloId));
+  var produtoReservadoPeloId = converteBuscaProdutos.find(
+    (element) => element.id === parseInt(id)
+  );
+  sessionStorage.setItem(
+    "reservarProduto",
+    JSON.stringify(produtoReservadoPeloId)
+  );
 }
 
 function verificaLogin() {
-  var verificaConexao = JSON.parse(localStorage.getItem('logging'));
+  var verificaConexao = JSON.parse(localStorage.getItem("logging"));
 
   if (verificaConexao.conectado == true) {
     window.location.href = "../finalizacao_pedidos/index.html";
   } else {
-    return alert('Você precisa estar logado para realizar uma reserva');
+    return alert("Você precisa estar logado para realizar uma reserva");
   }
 }
 
-exibeProdutos(converteBuscaProdutos);
+exibeProdutos();

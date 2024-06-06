@@ -22,7 +22,7 @@ function criarProduto(novoProduto) {
 
   localStorage.setItem("Produtos", JSON.stringify(produtos));
   localStorage.setItem("Indice", JSON.stringify((indiceAtual += 1)));
-}
+};
 
 function buscarProdutos() {
   console.log("Buscar Produtos");
@@ -30,12 +30,12 @@ function buscarProdutos() {
   var buscaProdutos = JSON.parse(localStorage.getItem("Produtos"));
 
   if (buscaProdutos) {
-    console.log(JSON.stringify(buscaProdutos));
+    console.log(buscaProdutos);
     return buscaProdutos;
   } else {
     return console.log("Nenhum registro em memória");
   }
-}
+};
 
 function buscarUmProduto(registroParaEncontrar) {
   console.log("Buscar Um Produto");

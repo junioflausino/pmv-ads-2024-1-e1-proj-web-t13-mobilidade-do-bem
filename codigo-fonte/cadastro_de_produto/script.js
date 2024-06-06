@@ -35,3 +35,5 @@ function verificarCampos() {
     document.getElementById('cad-resumo').value = "";
     document.getElementById('cad-imagem').value = "";
   }
+
+  buscarProdutos();
