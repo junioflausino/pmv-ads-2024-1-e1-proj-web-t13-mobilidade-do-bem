@@ -5,7 +5,6 @@ body
 
 }
 
-
 .nav-list
 {
     display: flex;
@@ -33,12 +32,31 @@ body
 }
 .login-icon
 {
-    margin-left: 3%;
+    margin-left: 6%;
 
 }
-
-form
+.form
 {
-    align-items: center;
-    justify-content: center
+    border: 1px solid #7426E0;
+
+
 }
+ .link-nao-possui-conta
+{
+    margin-left: 10%;
+    
+}
+.rodape{
+    background-color: #7426E0; 
+    font-family: 'Josefin Sans','sans-serif';
+    font-size:18px;
+    color:#f5f5f5;
+    text-align: static;
+    padding: 18px 0px 18px 0px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}   

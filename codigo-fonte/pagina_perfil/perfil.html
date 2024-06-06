@@ -48,7 +48,7 @@
     </header>
 
 
-    <body style="background-color: rgb(224, 224, 224);">
+    
 
    
    <form id="formulario" name="formulario"> 
@@ -56,21 +56,15 @@
     <input type="text" name="" id="name" placeholder="Nome completo"><br>
     <input type="text" name="" id="E-mail" placeholder="E-mail"><BR>
     <input type="tel" name="" id="telefone" placeholder= "Numero de telefone" maxlength="13"><br>
+    <input  type="text" required maxlength="8" placeholder="CEP" name="cep" onblur="formatarCEP(this)" >
    
-    <label>Categoria</label>
-    <br>
-    <select name="tipo de conta" id="tipo de conta" >
-        <option value="adquirir">Desejo adquirir produtos</option>
-        <option value="doar">Quero doar</option>
-        <option value="emprestar">Quero emprestar</option>
-    </select>
+
 
     </form>
-        <footer class="rodape">
-            <img width="15"
-            src="../img/perfil.png" alt="logomarca">
-            <p>Copyright &#169 2024 | Todos os direitos reservados</p>
-        </footer>   
+    <footer class="rodape"> 
+        <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">
+        </div><p>| Todos os direitos reservados</p>
+    </footer>     
 
 
 <style> 
@@ -89,19 +83,25 @@
 #formulario
 {
     width: 300px;
-    margin: 200px auto;
+    margin:200px auto;
     text-align: center;
+
 }
 input
 {
 display: block;
-margin: 10px auto;
-width: 250px ;
-height: 30px;
+margin: 2px auto;
+width: 200px ;
+height: 25px;
+border:  1px solid #EB7D17;
        }
 
    
     </style>
+ 
+<script>
+document.getElementById("E-mail,Nome, Telefone,CEP,Categoria ").ineer.html=localStorage.nome;
 
-    
-    
+
+
+</script>
