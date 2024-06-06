@@ -142,27 +142,27 @@
             <td>ALTA</td>
         </tr>
         <tr>
-            <td>RF-07</td>
+            <td>RF-06</td>
             <td>A aplicação deve ter uma área que mostra diversos equipamentos próximos</td>
             <td>ALTA</td>
         </tr>
         <tr>
-            <td>RF-08</td>
+            <td>RF-07</td>
             <td>A aplicação deve permitir a reserva de equipamentos</td>
             <td>ALTA</td>
         </tr>
         <tr>
-            <td>RF-09</td>
+            <td>RF-08</td>
             <td>A aplicação deve exibir um campo de busca para procura do produto</td>
             <td>MÉDIA</td>
         </tr>
         <tr>
-            <td>RF-10</td>
+            <td>RF-09</td>
             <td>A aplicação deve permitir o contato entre doares, emprestadores e pessoas que buscam aparelhos de auxílio à mobilidade</td>
             <td>ALTO</td>
         </tr>
         <tr>
-            <td>RF-11</td>
+            <td>RF-10</td>
             <td>A aplicação deve permitir a notificação dos usuários de novos produtos disponibilizados no site</td>
             <td>BAIXO</td>
         </tr>
