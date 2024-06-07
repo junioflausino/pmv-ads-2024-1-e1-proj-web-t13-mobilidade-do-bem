@@ -23,6 +23,8 @@ function registro()
         
         let ListaRegistro={nome : nomeCompleto, email : email, telefone : telefone, cep : cep, Tipo_conta : tipoConta, senha : senha};
         localStorage.setItem(email,JSON.stringify(ListaRegistro));
+        cidade= localizacaoCEP()
+        console.log(cidade)
         window.location.href = "../pagina_login/index.html";
         }
     else
@@ -67,3 +69,18 @@ function formatarTelefone(input)
             alert("O telefone nao está no formato correto, formato correto  319xxxxxxxx")
         }
 }
+
+function localizacaoCEP()
+{
+    let url= "https://viacep.com.br/ws/32672410/json/?callback=callback_name";
+
+    fetch(url)
+    .then(response =>{
+        if(!response.ok)
+            {
+                throw new Error("Erro na requisição")
+            }
+        return response.json();
+    })
+}
+
