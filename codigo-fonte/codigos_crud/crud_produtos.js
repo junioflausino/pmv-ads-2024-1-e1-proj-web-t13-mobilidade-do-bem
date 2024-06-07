@@ -10,9 +10,10 @@ function criarProduto(novoProduto) {
     indiceAtual = 0;
   }
 
-  var novoProduto = {
+// ... é a desestruturação, a variável novoProduto recebe um novo id e a estrutura do novoProduto (objeto com titulo, categoria, etc)
+    novoProduto = {
     id: indiceAtual,
-    ...novoProduto
+    ...novoProduto,
   };
 
   if (buscaProdutos) {
@@ -22,7 +23,7 @@ function criarProduto(novoProduto) {
 
   localStorage.setItem("Produtos", JSON.stringify(produtos));
   localStorage.setItem("Indice", JSON.stringify((indiceAtual += 1)));
-};
+}
 
 function buscarProdutos() {
   console.log("Buscar Produtos");
@@ -35,7 +36,7 @@ function buscarProdutos() {
   } else {
     return console.log("Nenhum registro em memória");
   }
-};
+}
 
 function buscarUmProduto(registroParaEncontrar) {
   console.log("Buscar Um Produto");
@@ -45,8 +46,7 @@ function buscarUmProduto(registroParaEncontrar) {
   if (buscaProdutos) {
     var registroEncontrado = buscaProdutos.find((elemento) => {
       return (
-        elemento.titulo == registroParaEncontrar.titulo &&
-        elemento.descricao == registroParaEncontrar.descricao
+        elemento.titulo == registroParaEncontrar.titulo
       );
     });
 
@@ -85,7 +85,7 @@ function atualizarProduto() {
     produtos[indiceDoProduto] = {
       id: registroEncontrado.id,
       titulo: dadosDeAtualizacao.titulo,
-      descricao: dadosDeAtualizacao.descricao
+      descricao: dadosDeAtualizacao.descricao,
     };
 
     localStorage.setItem("Produtos", JSON.stringify(produtos));
@@ -104,7 +104,7 @@ function removerProduto() {
   produtos = buscarProdutos();
   var registroEncontrado = buscarUmProduto(registroParaSerRemovido);
 
-  if(registroEncontrado) {
+  if (registroEncontrado) {
     var indiceDoProduto = produtos.findIndex((elemento) => {
       return elemento.id === registroEncontrado.id;
     });
