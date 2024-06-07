@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
     else
     {
         document.getElementById("sair").style.display='none';
-        document.getElementById("anunciar").style.display='none';
+
     }
         
 });
@@ -46,13 +46,10 @@ function naoLogado()
 
     if(usuario.conectado == false || !usuario )
         {
-            window.location.replace("../pagina_login/index.html")
+            window.location.href="../pagina_login/index.html"
         }
     else
     {
         window.location.href="../cadastro_de_produto/index.html"
     }
-
-
-
 }
