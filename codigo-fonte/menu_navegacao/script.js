@@ -53,3 +53,19 @@ function naoLogado()
         window.location.href="../cadastro_de_produto/index.html"
     }
 }
+
+function botaoPerfil()
+{
+    var usuario = JSON.parse(localStorage.getItem('logging'))
+
+    if(usuario.conectado == false || !usuario )
+        {
+            window.location.href="../pagina_login/index.html"
+        }
+    else
+    {
+        window.location.href="../pagina_perfil/perfil.html"
+    }
+
+
+}
