@@ -11,12 +11,13 @@ document.addEventListener('DOMContentLoaded', function(){
             window.location.href = "../pagina_inicial/index.html#sobre";
         }
     });
+
+
     var usuario = JSON.parse(localStorage.getItem('logging'))
     if(localStorage.getItem('logging'))
         {
         if(usuario.conectado == false)
             {
-                document.getElementById("anunciar").style.display='none';
                 document.getElementById("sair").style.display='none';
             }
         if(usuario.tipoConta == 'adquirir')
@@ -37,4 +38,21 @@ function sair()
     var usuario = JSON.parse(localStorage.getItem('logging'));
     usuario.conectado = false;
     localStorage.setItem('logging',JSON.stringify(usuario));
+}
+
+function naoLogado()
+{
+    var usuario = JSON.parse(localStorage.getItem('logging'))
+
+    if(usuario.conectado == false || !usuario )
+        {
+            window.location.replace("../pagina_login/index.html")
+        }
+    else
+    {
+        window.location.href="../cadastro_de_produto/index.html"
+    }
+
+
+
 }
