@@ -20,7 +20,6 @@ function registro()
     if (!localStorage.getItem(email))
         {
         localizacaoCEP(cep).then(cidade=> {
-            alert(cidade);
             cepFormatado = formatarCEP(cep);
             let ListaRegistro={nome : nomeCompleto, email : email,cidade :cidade, telefone : telefone, cep : cepFormatado, Tipo_conta : tipoConta, senha : senha};
             localStorage.setItem(email,JSON.stringify(ListaRegistro));
