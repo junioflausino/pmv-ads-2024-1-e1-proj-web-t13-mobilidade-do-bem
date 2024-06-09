@@ -2,8 +2,7 @@
 document.addEventListener("DOMContentLoaded",function(){
     document.getElementById("formulario").addEventListener('submit',function(event){
         event.preventDefault();
-        registro();
-        this.submit();
+        registro();   
 
     });
 });
@@ -20,12 +19,16 @@ function registro()
 
     if (!localStorage.getItem(email))
         {
-        
-        let ListaRegistro={nome : nomeCompleto, email : email, telefone : telefone, cep : cep, Tipo_conta : tipoConta, senha : senha};
-        localStorage.setItem(email,JSON.stringify(ListaRegistro));
-        cidade= localizacaoCEP()
-        console.log(cidade)
-        window.location.href = "../pagina_login/index.html";
+        localizacaoCEP(cep).then(cidade=> {
+            cepFormatado = formatarCEP(cep);
+            let ListaRegistro={nome : nomeCompleto, email : email,cidade :cidade, telefone : telefone, cep : cepFormatado, Tipo_conta : tipoConta, senha : senha};
+            localStorage.setItem(email,JSON.stringify(ListaRegistro));
+            window.location.href = "../pagina_login/index.html";
+        }).catch(error=>{
+            console.error(error);
+            alert("CEP invalido! Digite somente os numeros sem caracteres especiais")
+
+        });
         }
     else
         {
@@ -51,13 +54,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 function formatarCEP(input) {
-    const cep = input.value.replace(/\D/g, ''); 
+    const cep = document.getElementById("cep").value.replace(/\D/g, ''); 
     if (cep.length == 8) {
-        input.value = cep.substring(0, 6) + '-' + cep.substring(5); 
-    } else {
-        input.value = '';
-        alert("O CEP nao está no formato correto, formato correto  XXXXXXXX")
-    }
+        let cepFormatado = cep.substring(0, 5) + '-' + cep.substring(5);
+        return cepFormatado; 
+    } 
 }
 
 function formatarTelefone(input)
@@ -70,17 +71,20 @@ function formatarTelefone(input)
         }
 }
 
-function localizacaoCEP()
-{
-    let url= "https://viacep.com.br/ws/32672410/json/?callback=callback_name";
-
-    fetch(url)
-    .then(response =>{
-        if(!response.ok)
-            {
-                throw new Error("Erro na requisição")
+function localizacaoCEP(cep) {
+    let url = `https://viacep.com.br/ws/${cep}/json/`;
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro na requisição");
             }
-        return response.json();
-    })
+            return response.json();
+        })
+        .then(data => {
+            if (data.erro) {
+                throw new Error("CEP não encontrado");
+            }
+            return data.localidade; 
+        });
 }
 
