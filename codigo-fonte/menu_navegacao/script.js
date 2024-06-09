@@ -1,4 +1,13 @@
+var botaoPesquisa = document.getElementById('botao_pesquisa');
 
+// Ao clicar no botão pesquisa, o valor digitado pelo usuário é armazenado por parâmetro da URL na variável barraPesquisa e é feito o redirecionamento para página de produtos
+botaoPesquisa.onclick = function() {
+    console.log("clicado");
+    var barraPesquisa = document.getElementById('barra_pesquisa').value;
+
+    if (barraPesquisa !== null)
+        window.location.href = `../pagina_produtos/index.html?pesquisa=${barraPesquisa}`;
+}
 
 document.addEventListener('DOMContentLoaded', function(){   
     document.getElementById("link-sobre").addEventListener("click",function(event){

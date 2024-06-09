@@ -46,7 +46,7 @@ function buscarUmProduto(pesquisa) {
   if (buscaProdutos) {
     var registroEncontrado = buscaProdutos.find((elemento) => {
       return (
-        elemento.titulo == pesquisa
+        elemento.titulo.toUpperCase() == pesquisa.toUpperCase()
       );
     });
 
