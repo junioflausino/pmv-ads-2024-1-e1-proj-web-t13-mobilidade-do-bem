@@ -1,23 +1,12 @@
-//var botaoPesquisa = document.getElementById("botao_pesquisa");
+var botaoPesquisa = document.getElementById("botao_pesquisa");
 
-//botaoPesquisa.onclick = pesquisaProdutoDoInput();
-
-function pesquisaProdutoDoInput(pesquisa) {
-  var inputPesquisa = pesquisa;
+botaoPesquisa.onclick = function () {
+  var inputPesquisa = document.getElementById("barra_pesquisa").value;
   var produtoEncontrado = buscarUmProduto(inputPesquisa);
 
   if (produtoEncontrado) exibeProdutos(produtoEncontrado);
-  else {
-    var divRow = document.getElementById("div-row"); // Busca a div "div-row" que está declarada no index.html
-    var nenhumProdutoCadastradoAinda = `
-      <div style="position:center">
-        <h3>Não temos este produto no momento</h3>
-      </div>
-    `;
-
-    divRow.innerHTML = nenhumProdutoCadastradoAinda;
-  }
-}
+  else alert("Produto não encontrado");
+};
 
 //Função para printar no HTML
 function exibeProdutos(produtoEncontrado) {
@@ -25,7 +14,7 @@ function exibeProdutos(produtoEncontrado) {
   var divRow = document.getElementById("div-row"); // Busca a div "div-row" que está declarada no index.html
 
   if (produtoEncontrado) {
-    return (divRow.innerHTML = `
+    return divRow.innerHTML = `
       <div class="col-md-4 produto">
         <img src="${produtoEncontrado.imagem}" class="img-fluid rounded" alt="${produtoEncontrado.categoria}">
         <h3>${produtoEncontrado.titulo}</h3>
@@ -34,7 +23,7 @@ function exibeProdutos(produtoEncontrado) {
         <p>tempo: ${produtoEncontrado.tempo} dias</p>
         <button type="button" class="btn btn-light" onclick="reservar()">Reservar</button>
       </div>
-      `); // Insere as divs criadas no HTML da pagina index.html
+      `; // Insere as divs criadas no HTML da pagina index.html
   }
 
   if (produtosRegistrados) {
@@ -90,18 +79,4 @@ function verificaLogin() {
   }
 }
 
-//Função main verifica se há parâmetros de pesquisa, se sim, eles são armazenados na variável pesquisa, se não, a página de produtos é exibida com os produtos do cadastro através da função exibeProdutos()
-function main() {
-  var parametrosDePathUrl = new URLSearchParams(window.location.search);
-    var pesquisa = parametrosDePathUrl.get("pesquisa");
-    if (pesquisa != null){
-      console.log("if do if do main");
-      pesquisaProdutoDoInput(pesquisa);
-    }
-   else {
-    console.log("else do main");
-    exibeProdutos();
-  }
-}
-
-main();
+exibeProdutos();
