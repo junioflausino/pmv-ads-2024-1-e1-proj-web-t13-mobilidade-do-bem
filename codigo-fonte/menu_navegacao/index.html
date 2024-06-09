@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <script src="../codigos_crud/crud_produtos.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
 </head>
@@ -31,9 +32,8 @@
                     </ul>
                 </div>
                 <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
-                    <button class="btn  my-2 my-sm-0">Pesquisar</button>
-
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="barra_pesquisa">
+                    <button class="btn  my-2 my-sm-0" id="botao_pesquisa">Pesquisar</button>
                 </form>
                 <div class="login-icon navbar-brand">
                     <a id="sair" href=""  onclick="sair()">Sair</a>

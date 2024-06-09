@@ -1,4 +1,12 @@
-document.addEventListener('DOMContentLoaded', function(){
+var barraPesquisa = document.getElementById('barra_pesquisa').value;
+var botaoPesquisa = document.getElementById('botao_pesquisa');
+
+botaoPesquisa.onclick = function() {
+    // buscarUmProduto(barraPesquisa);
+    window.location.href = "../pagina_perfil/perfil.html";
+}
+
+document.addEventListener('DOMContentLoaded', function(){   
     document.getElementById("link-sobre").addEventListener("click",function(event){
         event.preventDefault();
         var sobre= document.getElementById("sobre");
@@ -66,6 +74,4 @@ function botaoPerfil()
     {
         window.location.href="../pagina_perfil/perfil.html"
     }
-
-
 }

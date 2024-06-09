@@ -38,7 +38,7 @@ function buscarProdutos() {
   }
 }
 
-function buscarUmProduto(registroParaEncontrar) {
+function buscarUmProduto(pesquisa) {
   console.log("Buscar Um Produto");
 
   var buscaProdutos = JSON.parse(localStorage.getItem("Produtos"));
@@ -46,7 +46,7 @@ function buscarUmProduto(registroParaEncontrar) {
   if (buscaProdutos) {
     var registroEncontrado = buscaProdutos.find((elemento) => {
       return (
-        elemento.titulo == registroParaEncontrar.titulo
+        elemento.titulo == pesquisa
       );
     });
 

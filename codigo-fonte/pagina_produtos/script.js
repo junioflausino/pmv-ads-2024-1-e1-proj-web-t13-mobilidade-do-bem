@@ -1,7 +1,30 @@
+var botaoPesquisa = document.getElementById("botao_pesquisa");
+
+botaoPesquisa.onclick = function () {
+  var inputPesquisa = document.getElementById("barra_pesquisa").value;
+  var produtoEncontrado = buscarUmProduto(inputPesquisa);
+
+  if (produtoEncontrado) exibeProdutos(produtoEncontrado);
+  else alert("Produto não encontrado");
+};
+
 //Função para printar no HTML
-function exibeProdutos() {
+function exibeProdutos(produtoEncontrado) {
   var produtosRegistrados = buscarProdutos(); // Busca os produtos cadastrados na memória
   var divRow = document.getElementById("div-row"); // Busca a div "div-row" que está declarada no index.html
+
+  if (produtoEncontrado) {
+    return divRow.innerHTML = `
+      <div class="col-md-4 produto">
+        <img src="${produtoEncontrado.imagem}" class="img-fluid rounded" alt="${produtoEncontrado.categoria}">
+        <h3>${produtoEncontrado.titulo}</h3>
+        <p>${produtoEncontrado.resumo}</p>
+        <p>${produtoEncontrado.modalidade}</p>
+        <p>tempo: ${produtoEncontrado.tempo} dias</p>
+        <button type="button" class="btn btn-light" onclick="reservar()">Reservar</button>
+      </div>
+      `; // Insere as divs criadas no HTML da pagina index.html
+  }
 
   if (produtosRegistrados) {
     // Salve a imagem com o caminho relativo, exemplo: ../img/andador.png ou ../img/bengala.png
@@ -34,7 +57,7 @@ function exibeProdutos() {
 
 function reservar(id) {
   return alert("Em desenvolvimento!");
-  
+
   verificaLogin();
 
   var produtoReservadoPeloId = converteBuscaProdutos.find(
@@ -56,38 +79,4 @@ function verificaLogin() {
   }
 }
 
-function buscarProdutos() {
-  var titulo = document.getElementById('').value;
-  
-
-  if (titulo === "" || categoria === "null" || modalidade === "null" || tempo === "" || resumo === "" || imagem === "") {
-    alert("Por favor, preencha todos os campos.");
-  } else {
-    let ListaRegistro = {
-      titulo : titulo,
-      categoria : categoria,
-      modalidade : modalidade,
-      tempo : tempo,
-      resumo :resumo,
-      imagem : imagem
-    };
-
-    criarProduto(ListaRegistro);
-
-    // localStorage.setItem('Produtos', JSON.stringify(ListaRegistro));
-    mostrarMensagem();
-  }
-}
-
-function mostrarMensagem() {
-  alert("Produto cadastrado com sucesso!");
-
-  document.getElementById('cad-titulo').value = "";
-  document.getElementById('cad-categoria').value = "null";
-  document.getElementById('cad-modalidade').value = "null";
-  document.getElementById('cad-tempo').value = "";
-  document.getElementById('cad-resumo').value = "";
-  document.getElementById('cad-imagem').value = "";
-}
-
-buscarProdutos();
+exibeProdutos();
