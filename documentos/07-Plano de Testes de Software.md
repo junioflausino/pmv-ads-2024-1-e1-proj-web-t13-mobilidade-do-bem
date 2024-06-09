@@ -1,10 +1,9 @@
 # Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-1 - Permitir cadastrar conta |
 |:---|:---|
 | Requisitos Associados | RF-X |
 | Objetivo do Teste | Descrição do objetivo do teste |
@@ -12,9 +11,54 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
  
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+
+
+|Caso de Teste    | CT-2 - Deve permitir fazer login da conta |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxito  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+ 
+
+|Caso de Teste    | CT-3 - Menu de Navegação deve fazer o link entre as páginas  |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxito  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+ 
+
+|Caso de Teste    | CT-4 - Aplicação deve fazer o cadastro de aparelhos |
+|:---|:---|
+| Requisitos Associados | RF-04:A aplicação deve permitir o cadastro dos aparelhos de mobilidade / RF-05: Deve permitir ao usuário adquirir o equipamento desejado / RF-06: A aplicação deve ter uma área que mostra diversos equipamentos próximos |
+| Objetivo do Teste | Verificar se aparelhos estão sendo cadastrados corretamente |
+| Passos | 1.Acessar o navegador<br>2.Informar o endereço do site<br>3.Realize o login com uma conta ou crie uma conta.<br>4.Clique em "Anunciar".<br>5.Preencha os dados para cadastro<br>6.Clique em "Cadastrar" |
+| Critérios de êxito | Após o cadastro o produto deve aparecer na pagina produtos.  |
+| Responsável pela elaborar do caso de Teste | Nicolas Gabriel |
+ 
+
+
+|Caso de Teste    | CT-5 - Deve permitir a visualização de diversos produtos |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxit  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+
+
+|Caso de Teste    | CT-6 - Reserva de produtos |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxito  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+ 
+ 
