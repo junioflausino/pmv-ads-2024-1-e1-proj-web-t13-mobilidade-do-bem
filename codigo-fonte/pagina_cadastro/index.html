@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="script.js"></script>
     <link rel="stylesheet" href="../menu_navegacao/style.css">
-    <script defer src="../menu_navegacao/script.js"></script>
+    <script src="../menu_navegacao/script.js"></script>
     
 </head>
 <body style="background-color: rgb(224, 224, 224);">
@@ -33,8 +33,11 @@
 
                     </ul>
                 </div>
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="barra_pesquisa">
-                <button class="btn  my-2 my-sm-0" id="botao_pesquisa">Pesquisar</button>
+                <form id="pesquisa" action="" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" name="" id="">
+                    <button class="btn  my-2 my-sm-0">Pesquisar</button>
+
+                </form>
                 <div class="login-icon navbar-brand">
                     <a id="sair" href=""  onclick="sair()">Sair</a>
                     <a href="javascript:botaoPerfil()"><img id="icone" src="../img/perfil.png" alt="LOGIN/CADASTRO" width="65px" height="50px"></a>                </div>
@@ -42,6 +45,10 @@
         </nav>
 
     </header>
+
+
+
+
     <div id="formulario" class="row d-flex justify-content-center align-item-center">
         <form class="" action="">
             <h5 id="titulo-cadastrar" class="col-sm-12 mb-1">Cadastre-se</h5>
