@@ -12,6 +12,10 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/110619692/d7b1cf06-3427-4dcb-8dab-b3bdf808eb48
 
+|Caso de Teste    | CT-1 - Permitir cadastrar conta |
+|:---|:---|
+| Resultados obtidos | O cadastro está sendo efetivado.  |
+| Responsável pela execução do caso de Teste | Junio Flausino Rocha |
 
 
 
