@@ -24,3 +24,18 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilid
 
 
 [Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+|Caso de Teste    | CT - 2 RF 02- A aplicação deve permitir ao usuário fazer o login da sua conta |
+|:---|:---|
+| Resultados obtidos | O login está sendo realizado.  |
+| Responsável pela execução do caso de Teste | Daianne Paula Moreira Pinto |
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/139081871/08343de4-d842-47f4-9cc4-eb3dfaf2d79a
+
+
+
+
+
