@@ -37,3 +37,8 @@ function verificarCampos() {
   }
 
   buscarProdutos();
+
+  function logout() {
+
+    window.location.href = "http://127.0.0.1:5500/codigo-fonte/pagina_inicial/index.html";
+  }

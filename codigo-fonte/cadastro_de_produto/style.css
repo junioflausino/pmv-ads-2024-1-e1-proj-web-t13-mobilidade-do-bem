@@ -77,20 +77,14 @@
       margin-top: 0px;
       margin-left: 42px;
     }
-    
-    .profile-usermenu ul li {
-      border-bottom: 1px solid #f0f4f7;
-      border: 1px solid #EB7D17;
+    .nav-button{
+      background-color: white;
+      border: 1px solid orange;
+      color: rgb(0, 0, 0);
+      padding: 5px 10px; 
       border-radius: 5px;
-      list-style-type: none;
-      padding: 10x 10px 10px 10px;
+      margin-left: 15px;
     }
-    
-    .profile-usermenu ul li a {
-      color: #000000;
-      font-size: 18px;
-    }
-    
     .profile-usermenu ul li a:hover {
       color: goldenrod;
     }
