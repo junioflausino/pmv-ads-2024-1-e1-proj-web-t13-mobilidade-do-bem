@@ -36,12 +36,12 @@ body{
                                         /*Main*/
 .faixa-inicial{
     width: 100%;
-    background-color:#fffafa;
+    background-color:#efeef1;
     display: grid;
     grid-template-columns:repeat(10,1fr);
     grid-template-rows: 50px 150px;
     border: 1px solid;
-    border-color:#EB7D17;
+    border-color: #d3d2d2;
     margin-top: 115px;
     grid-template-areas: 
     "text-1 text-1 text-1 text-1 text-1 text-1 text-2 text-2 text-3 text-3"
@@ -54,7 +54,8 @@ body{
     background-color: #efeef1;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 80px;
 }
 .text-2{
     grid-area: text-2;
@@ -80,7 +81,7 @@ body{
     display: flex;
     justify-content: center;
     border-top: 1px solid;
-    border-color: #EB7D17;
+    border-color: #d3d2d2;
 }
 .text-5{
     grid-area: text-5;
@@ -90,7 +91,7 @@ body{
     display: flex;
     justify-content: center;
     border-top: 1px solid;
-    border-color: #EB7D17;
+    border-color: #d3d2d2;
 }
 .text-6{
     grid-area: text-6;
@@ -100,7 +101,7 @@ body{
     display: flex;
     justify-content: center;
     border-top: 1px solid;
-    border-color: #EB7D17;
+    border-color: #d3d2d2;
 }
 .text-adicional{
     grid-area: text-adicional;
@@ -110,9 +111,41 @@ body{
     display: flex;
     justify-content: center;
     border-top: 1px solid;
-    border-color: #EB7D17;
+    border-color: #d3d2d2;
 }
-
+#botao-reservar{
+    padding: 6px 37px 6px 37px;
+    cursor: pointer;
+    margin: 40px;
+    font-size: 25px;
+    color: #f5f5f5;
+    background-color:#39ad0b;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#botao-voltar{
+    padding: 6px 37px 6px 37px;
+    cursor: pointer;
+    margin: 40px;
+    font-size: 25px;
+    color: #000000;
+    background-color:#b9bdb8;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #b9bdb8;
+}
+.button-alocar-reservar{
+    display: inline-block   ;
+    float: right ;
+    margin-right: 5px;
+    margin-bottom: 25px;
+}
+.button-alocar-voltar{
+    display: inline-block;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
                                     /*Rodapé*/
 
 .rodape{
@@ -121,7 +154,7 @@ body{
     color:#f5f5f5;
     text-align: static;
     padding: 18px 0px 18px 0px;
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;

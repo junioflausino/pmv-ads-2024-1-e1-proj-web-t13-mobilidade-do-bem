@@ -66,6 +66,4 @@ function botaoPerfil()
     {
         window.location.href="../pagina_perfil/perfil.html"
     }
-
-
 }
