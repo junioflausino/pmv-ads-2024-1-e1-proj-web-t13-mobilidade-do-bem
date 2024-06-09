@@ -1,3 +1,11 @@
+var barraPesquisa = document.getElementById('barra_pesquisa').value;
+var botaoPesquisa = document.getElementById('botao_pesquisa');
+
+botaoPesquisa.onclick = function() {
+    // buscarUmProduto(barraPesquisa);
+    window.location.href = "../pagina_perfil/perfil.html";
+}
+
 document.addEventListener('DOMContentLoaded', function(){   
     document.getElementById("link-sobre").addEventListener("click",function(event){
         event.preventDefault();
@@ -44,7 +52,7 @@ function naoLogado()
 {
     var usuario = JSON.parse(localStorage.getItem('logging'))
 
-    if(!usuario || usuario.conectado == false  )
+    if(!usuario )
         {
             window.location.href="../pagina_login/index.html"
         }
@@ -66,11 +74,4 @@ function botaoPerfil()
     {
         window.location.href="../pagina_perfil/perfil.html"
     }
-}
-var barraPesquisa = document.getElementById('barra_pesquisa').value;
-var botaoPesquisa = document.getElementById('botao_pesquisa');
-
-botaoPesquisa.onclick = function() {
-    // buscarUmProduto(barraPesquisa);
-    window.location.href = "../pagina_perfil/perfil.html";
 }
