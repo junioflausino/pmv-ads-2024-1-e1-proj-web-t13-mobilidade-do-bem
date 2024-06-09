@@ -21,9 +21,11 @@ function pesquisaProdutoDoInput(pesquisa) {
 
 //Função para printar no HTML
 function exibeProdutos(produtoEncontrado) {
-  var produtosRegistrados = buscarProdutos(); // Busca os produtos cadastrados na memória
+  var produtosRegistrados = produtoEncontrado
+    ? produtoEncontrado
+    : buscarProdutos(); // Busca os produtos cadastrados na memória
   var divRow = document.getElementById("div-row"); // Busca a div "div-row" que está declarada no index.html
-
+  /*
   if (produtoEncontrado) {
     return (divRow.innerHTML = `
       <div class="col-md-4 produto">
@@ -35,13 +37,14 @@ function exibeProdutos(produtoEncontrado) {
         <button type="button" class="btn btn-light" onclick="reservar()">Reservar</button>
       </div>
       `); // Insere as divs criadas no HTML da pagina index.html
-  }
+  }*/
 
   if (produtosRegistrados) {
     // Salve a imagem com o caminho relativo, exemplo: ../img/andador.png ou ../img/bengala.png
     // Se a variável produtosRegistrados estiver preenchidas com produtos
     var produtosParaMostrarNaTela = produtosRegistrados.map((elemento) => {
       // Array.map() funciona como um for, e para cada "elemento" ele ira executar uma instrução
+      var elementoParametro = elemento;
       return `
       <div class="col-md-4 produto">
         <img src="${elemento.imagem}" class="img-fluid rounded" alt="${elemento.categoria}">
@@ -49,7 +52,7 @@ function exibeProdutos(produtoEncontrado) {
         <p>${elemento.resumo}</p>
         <p>${elemento.modalidade}</p>
         <p>tempo: ${elemento.tempo} dias</p>
-        <button type="button" class="btn btn-light" onclick="reservar()">Reservar</button>
+        <button type="button" class="btn btn-light" onclick="reservar(${elemento.id})">Reservar</button>
       </div>
       `; // A instrução é criar uma div contendo todo o html de um produto
     }); // Clicar em Reservar ainda não foi implementado
@@ -67,38 +70,34 @@ function exibeProdutos(produtoEncontrado) {
 }
 
 function reservar(id) {
-  return alert("Em desenvolvimento!");
+  var usuarioConectado = verificaLogin();
 
-  verificaLogin();
-
-  var produtoReservadoPeloId = converteBuscaProdutos.find(
-    (element) => element.id === parseInt(id)
-  );
-  sessionStorage.setItem(
-    "reservarProduto",
-    JSON.stringify(produtoReservadoPeloId)
-  );
+  if (usuarioConectado) {
+    window.location.href = `../finalizacao_pedidos/finalizacao.html?id_do_produto=${id}`;
+  } else {
+    alert("Você precisa estar logado para realizar uma reserva");
+  }
 }
 
 function verificaLogin() {
   var verificaConexao = JSON.parse(localStorage.getItem("logging"));
-
-  if (verificaConexao.conectado == true) {
-    window.location.href = "../finalizacao_pedidos/index.html";
-  } else {
-    return alert("Você precisa estar logado para realizar uma reserva");
+  if (verificaConexao) {
+    if (verificaConexao.conectado == true) {
+      return verificaConexao;
+    } else {
+      return false;
+    }
   }
 }
 
 //Função main verifica se há parâmetros de pesquisa, se sim, eles são armazenados na variável pesquisa, se não, a página de produtos é exibida com os produtos do cadastro através da função exibeProdutos()
 function main() {
   var parametrosDePathUrl = new URLSearchParams(window.location.search);
-    var pesquisa = parametrosDePathUrl.get("pesquisa");
-    if (pesquisa != null){
-      console.log("if do if do main");
-      pesquisaProdutoDoInput(pesquisa);
-    }
-   else {
+  var pesquisa = parametrosDePathUrl.get("pesquisa");
+  if (pesquisa != null) {
+    console.log("if do if do main");
+    pesquisaProdutoDoInput(pesquisa);
+  } else {
     console.log("else do main");
     exibeProdutos();
   }

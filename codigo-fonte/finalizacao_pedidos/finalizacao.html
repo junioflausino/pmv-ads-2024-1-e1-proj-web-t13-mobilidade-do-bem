@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
-    <script defer src="../menu_navegacao/script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="finalizacao.css">
-    <script src="finalizacao.js"></script>
+    <script defer src="../menu_navegacao/script.js"></script>
+    <script defer src="finalizacao.js"></script>
+    <script src="../codigos_crud/crud_produtos.js"></script>
 </head>
 <body>
     <header>
@@ -45,17 +45,13 @@
     </header>
 
 <main>
-    <div class="faixa-inicial">
-        <div class="text-1">Produto</div>
-        <div class="text-2">Período</div>
-        <div class="text-3">Quantidade</div>
-        <div class="text-4"><img src="../img/andandor empréstimo.jpg" alt="andador empréstimo"></div>
-        <div class="text-adicional">Andador prata com cabo</div>
-        <div class="text-5">120 dias</div>
-        <div class="text-6">1</div>
+    <div class="faixa-inicial" id="div-do-produto">
+
+        <!-- AGORA FEITO DE FORMA DINAMICA -->
+
     </div>
-    <div class="button-alocar-reservar"><button onclick="" id="botao-reservar" type="button">Reservar</button></div>
-    <div class="button-alocar-voltar"><button onclick="" id="botao-voltar" type="button">Voltar</button></div>
+    <div class="button-alocar-reservar"><button onclick="reservarProduto()" id="botao-reservar" type="button">Reservar</button></div>
+    <div class="button-alocar-voltar"><button onclick="voltarParaPaginaDeProdutos()" id="botao-voltar" type="button">Voltar</button></div>
 </main>
     <footer class="rodape"> 
         <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">

@@ -44,11 +44,30 @@ function buscarUmProduto(pesquisa) {
   var buscaProdutos = JSON.parse(localStorage.getItem("Produtos"));
 
   if (buscaProdutos) {
-    var registroEncontrado = buscaProdutos.find((elemento) => {
-      return (
-        elemento.titulo.toUpperCase() == pesquisa.toUpperCase()
-      );
-    });
+    var registroEncontrado = buscaProdutos.filter((elemento) => 
+      elemento.titulo.toUpperCase() == pesquisa.toUpperCase()
+    );
+
+    if (registroEncontrado.length) {
+      console.log(registroEncontrado);
+      return registroEncontrado;
+    } else {
+      return console.log("Produto não encontrado");
+    }
+  } else {
+    return console.log("Nenhum registro em memória");
+  }
+}
+
+function buscarUmProdutoPeloId(id) {
+  console.log("Buscar Um Produto");
+
+  var buscaProdutos = JSON.parse(localStorage.getItem("Produtos"));
+
+  if (buscaProdutos) {
+    var registroEncontrado = buscaProdutos.find((elemento) => 
+      elemento.id == id
+    );
 
     if (registroEncontrado) {
       console.log(registroEncontrado);

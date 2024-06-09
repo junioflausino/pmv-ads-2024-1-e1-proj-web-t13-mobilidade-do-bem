@@ -56,16 +56,6 @@ var pedidos = [
   }
 ];
 
-console.log(pedidos);
-
-/* COMO INSERIR UM PEDIDO NOVO *
-  pedidos2={
-    usuario: usuarios[1],
-    produto: produtos[1]
-  }
-pedidos.push(pedidos2);
-***********************************/
-
 //Função para printar no HTML
 function teste(converteBuscaPedidos){
   var divDadosPedidosNome = document.getElementById("dadosPedidosNome");
@@ -77,17 +67,3 @@ function teste(converteBuscaPedidos){
   var divDadosPedidosTelefone = document.getElementById("dadosPedidosTelefone");
   divDadosPedidosTelefone.innerHTML = converteBuscaPedidos[0].usuario.telefone;
 }
-
-//Salva e recupera os dados do pedido no localStorage
-localStorage.setItem('pedidos', JSON.stringify(pedidos));
-var buscaPedidos = localStorage.getItem('pedidos');
-var converteBuscaPedidos = JSON.parse(buscaPedidos);
-
-teste(converteBuscaPedidos);
-
-/* Teste no console
-console.log(converteBuscaPedidos[0]);
-console.log(converteBuscaPedidos[0].nomeCompleto);
-console.log(converteBuscaPedidos[0].email);
-console.log(converteBuscaPedidos[0].telefone);*/
-

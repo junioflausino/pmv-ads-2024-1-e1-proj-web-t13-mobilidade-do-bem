@@ -1,69 +1,74 @@
-document.addEventListener('DOMContentLoaded', function(){
-    document.getElementById("link-sobre").addEventListener("click",function(event){
-        event.preventDefault();
-        var sobre= document.getElementById("sobre");
-        if(sobre)
-        {   
-            document.getElementById("sobre").scrollIntoView({behavior:"smooth"});
-        }
-        else
-        {
-            window.location.href = "../pagina_inicial/index.html#sobre";
-        }
-    });
+var VetorDeReservas = [];
 
+function voltarParaPaginaDeProdutos() {
+    return window.location.href = "../pagina_produtos/index.html";
+}
 
-    var usuario = JSON.parse(localStorage.getItem('logging'))
-    if(localStorage.getItem('logging'))
-        {
-        if(usuario.conectado == false)
-            {
-                document.getElementById("sair").style.display='none';
+function verificaLogin() {
+    var verificaConexao = JSON.parse(localStorage.getItem("logging"));
+    if (verificaConexao) {
+      if (verificaConexao.conectado == true) {
+        return verificaConexao;
+      } else {
+        return false;
+      }
+    }
+  }
+
+function reservarProduto() {
+    var parametrosDePathUrl = new URLSearchParams(window.location.search);
+    var idDoProduto = parametrosDePathUrl.get("id_do_produto");
+
+    if (idDoProduto) {
+        var produtoEncontradoPeloId = buscarUmProdutoPeloId(idDoProduto);
+        var usuarioConectado = verificaLogin();
+
+        var reserva = {
+            produto: {
+                ...produtoEncontradoPeloId,
+            },
+            usuario: {
+                ...usuarioConectado
             }
-        if(usuario.tipoConta == 'adquirir')
-            {
-                document.getElementById("anunciar").style.display='none';
-            }
+        };
+
+        console.log(reserva);
+
+        var tabelaProdutosReservados = JSON.parse(localStorage.getItem('ProdutosReservados'));
+
+        if (tabelaProdutosReservados) {
+            VetorDeReservas = tabelaProdutosReservados;
+            VetorDeReservas.push(reserva);
+            localStorage.setItem('ProdutosReservados', JSON.stringify(VetorDeReservas));
         }
-    else
-    {
-        document.getElementById("sair").style.display='none';
-
-    }
-        
-});
-
-function sair()
-{
-    var usuario = JSON.parse(localStorage.getItem('logging'));
-    usuario.conectado = false;
-    localStorage.setItem('logging',JSON.stringify(usuario));
-}
-
-function naoLogado()
-{
-    var usuario = JSON.parse(localStorage.getItem('logging'))
-
-    if(usuario.conectado == false || !usuario )
-        {
-            window.location.href="../pagina_login/index.html"
+        else {
+            VetorDeReservas.push(reserva);
+            localStorage.setItem('ProdutosReservados', JSON.stringify(VetorDeReservas));
         }
-    else
-    {
-        window.location.href="../cadastro_de_produto/index.html"
+        window.location.href = "../retorno_finalizacao_pedidos/index.html";
     }
 }
 
-function botaoPerfil()
-{
-    var usuario = JSON.parse(localStorage.getItem('logging'))
+function main() {
+    var divDoProduto = document.getElementById("div-do-produto"); 
 
-    if(usuario.conectado == false || !usuario )
-        {
-            window.location.href="../pagina_login/index.html"
-        }
-    else
-    {
-        window.location.href="../pagina_perfil/perfil.html"
+    var parametrosDePathUrl = new URLSearchParams(window.location.search);
+    var idDoProduto = parametrosDePathUrl.get("id_do_produto");
+
+    if (idDoProduto) {
+        var produtoEncontradoPeloId = buscarUmProdutoPeloId(idDoProduto);
+        var produtoParaMostrarNaTela = `
+            <div class="text-1">Produto</div>
+            <div class="text-2">Período</div>
+            <div class="text-3">Quantidade</div>
+            <div class="text-4"><img src=${produtoEncontradoPeloId.imagem} alt=${produtoEncontradoPeloId.categoria}></div>
+            <div class="text-adicional">${produtoEncontradoPeloId.resumo}</div>
+            <div class="text-5">${produtoEncontradoPeloId.tempo}</div>
+            <div class="text-6">1</div>
+        `;
+
+        divDoProduto.innerHTML = produtoParaMostrarNaTela;
     }
 }
+
+main();
