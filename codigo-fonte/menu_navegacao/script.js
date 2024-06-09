@@ -1,10 +1,4 @@
-var barraPesquisa = document.getElementById('barra_pesquisa').value;
-var botaoPesquisa = document.getElementById('botao_pesquisa');
 
-botaoPesquisa.onclick = function() {
-    // buscarUmProduto(barraPesquisa);
-    window.location.href = "../pagina_perfil/perfil.html";
-}
 
 document.addEventListener('DOMContentLoaded', function(){   
     document.getElementById("link-sobre").addEventListener("click",function(event){
@@ -74,4 +68,12 @@ function botaoPerfil()
     {
         window.location.href="../pagina_perfil/perfil.html"
     }
+}
+
+var barraPesquisa = document.getElementById('barra_pesquisa').value;
+var botaoPesquisa = document.getElementById('botao_pesquisa');
+
+botaoPesquisa.onclick = function() {
+    // buscarUmProduto(barraPesquisa);
+    window.location.href = "../pagina_perfil/perfil.html";
 }
