@@ -45,7 +45,7 @@ function reservarProduto() {
             VetorDeReservas.push(reserva);
             localStorage.setItem('ProdutosReservados', JSON.stringify(VetorDeReservas));
         }
-        window.location.href = "../retorno_finalizacao_pedidos/index.html";
+        window.location.href = `../retorno_finalizacao_pedidos/index.html?id_do_produto=${idDoProduto}`;
     }
 }
 

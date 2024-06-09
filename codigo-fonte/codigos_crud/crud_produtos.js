@@ -3,6 +3,7 @@ var produtos = [];
 function criarProduto(novoProduto) {
   console.log("Criar Produto");
 
+  var usuario = JSON.parse(localStorage.getItem("logging"));
   var buscaProdutos = JSON.parse(localStorage.getItem("Produtos"));
   var indiceAtual = JSON.parse(localStorage.getItem("Indice"));
 
@@ -14,6 +15,7 @@ function criarProduto(novoProduto) {
     novoProduto = {
     id: indiceAtual,
     ...novoProduto,
+    ...usuario
   };
 
   if (buscaProdutos) {

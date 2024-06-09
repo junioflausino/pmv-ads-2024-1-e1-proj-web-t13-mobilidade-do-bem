@@ -10,18 +10,6 @@ var usuarios = [
   }
 ];
 
-/* COMO INSERIR UM USUARIO NOVO *
-usuario2 = {
-  nomeCompleto: "b",
-  email: "b",
-  telefone: "b",
-  cep: "b",
-  tipoConta: "b",
-  senha: "b"
-}
-usuarios.push(usuario2);
-***********************************/
-
 // Criando o mock de produtos
 var produtos = [
   produto1 = {
@@ -35,19 +23,6 @@ var produtos = [
   }
 ];
 
-/* COMO INSERIR UM PRODUTO NOVO *
-  produto2 = {
-    titulo: "jodisclayton",
-    categoria: "jodisclayton@hotmail.com",
-    modalidade: "123",
-    tempoEmprestimo: "123",
-    endereco: "adquirir",
-    descricao: "123",
-    imagem: "caminho_da_imagem"
-  }
-produtos.push(produto2);
-***********************************/
-
 // Criando o mock de pedidos
 var pedidos = [
   pedidos1={
@@ -57,13 +32,22 @@ var pedidos = [
 ];
 
 //Função para printar no HTML
-function teste(converteBuscaPedidos){
+function mostraNaTela(idDoProduto){
+  var produto = buscarUmProdutoPeloId(idDoProduto);
+  console.log(produto);
+
   var divDadosPedidosNome = document.getElementById("dadosPedidosNome");
-  divDadosPedidosNome.innerHTML = converteBuscaPedidos[0].usuario.nomeCompleto;
+  divDadosPedidosNome.innerHTML = produto.nome;
 
   var divDadosPedidosEmail = document.getElementById("dadosPedidosEmail");
-  divDadosPedidosEmail.innerHTML = converteBuscaPedidos[0].usuario.email;
-  
-  var divDadosPedidosTelefone = document.getElementById("dadosPedidosTelefone");
-  divDadosPedidosTelefone.innerHTML = converteBuscaPedidos[0].usuario.telefone;
+  divDadosPedidosEmail.innerHTML = produto.email;
 }
+
+function main() {
+  var parametrosDePathUrl = new URLSearchParams(window.location.search);
+  var idDoProduto = parametrosDePathUrl.get("id_do_produto");
+
+  mostraNaTela(idDoProduto);
+}
+
+main();
