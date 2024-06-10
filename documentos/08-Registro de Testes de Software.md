@@ -23,8 +23,6 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilid
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/164429443/88974d7f-90ad-404b-83f9-a4f965659908
 
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
-
 Informações armazenadas no LocalStorage após usuário se cadastrar.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/164429443/e49a89b2-0f62-4ccc-a745-9577c591d39f)
