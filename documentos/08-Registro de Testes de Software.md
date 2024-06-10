@@ -34,6 +34,14 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilid
 
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/139081871/08343de4-d842-47f4-9cc4-eb3dfaf2d79a
+---------------------------------------------------------------------------------------------------------------------------------------------
+|Caso de Teste    | CT-3 - O menu de navegação deve fazer o link entre as páginas e a diferenciação entre perfis |
+|:---|:---|
+| Resultados obtidos | O menu está redirecionando corretamente para as páginas e faz a diferenciação entre perfis - apenas usuários cadastrados nas categorias "quero doar" e "quero emprestar" e logados conseguem acessar a opção "anunciar"  |
+| Responsável pela execução do caso de Teste | Letícia Moreira |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/81230c4a-43cd-4e9a-9296-4ed1b1f1883b
+------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
