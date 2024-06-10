@@ -5,12 +5,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-1 - Permitir cadastrar conta |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
- 
+| Requisitos Associados | RF-1 A aplicação deve permitir ao usuário cadastrar uma conta  |
+| Objetivo do Teste | Verificar se o cadastro de pessoa foi concluído, armazenando os dados do usuário |
+| Passos | Acessar a página inicial, clicar no ícone de usuário no canto superior direito, após isso, clicar em "Não possui uma conta?Cadastre-se" e efetuar o cadastro. |
+| Critérios de êxito | Após o cadastro, os dados constam armazenados no localStorage |
+| Responsável pela elaborar do caso de Teste | Junio Flausino Rocha |
 
 
 |Caso de Teste    | CT-2 - Deve permitir fazer login da conta |
