@@ -19,8 +19,6 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilid
 |:---|:---|
 | Resultados obtidos | O cadastro está sendo efetivado.  |
 | Responsável pela execução do caso de Teste | Junio Flausino Rocha |
-| Resultados obtidos | O cadastro está sendo efetivado.  |
-| Responsável pela execução do caso de Teste | Junio Flausino Rocha |
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/164429443/88974d7f-90ad-404b-83f9-a4f965659908
 
