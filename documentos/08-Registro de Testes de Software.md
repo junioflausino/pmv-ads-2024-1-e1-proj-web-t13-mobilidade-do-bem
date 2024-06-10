@@ -43,8 +43,12 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilid
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/142820647/81230c4a-43cd-4e9a-9296-4ed1b1f1883b
 ------------------------------------------------------------------------------------------------------------------------------------------
+|Caso de Teste    | CT-6 - Reserva de Produtos |
+|:---|:---|
+| Resultados obtidos | O botom "Reservar" esta funcionando corretamente sendo direcionado para a página dos dados do fornecedor.  |
+| Responsável pela execução do caso de Teste | Marcela de Oliveira Santos |
 
-
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-mobilidade-do-bem/assets/164429796/467ea4b0-2779-4274-b026-ecb98060b9c2
 
 
 
