@@ -54,10 +54,10 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-6 - Reserva de produtos |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Requisitos Associados | RF-08 A aplicação deve permitir a reserva de equipamentos |
+| Objetivo do Teste | Verificar se a reserva de produtos foi devidamente concluida. |
+| Passos | Após cadastro e login acessar a página de produtos, selecionar o equipamento desejado e clicar em reservar.|
+| Critérios de êxito |  Após a reserva devera aparecer os dados do fornecedor.|
+| Responsável pela elaborar do caso de Teste | Marcela de Oliveira Santos |
  
  
