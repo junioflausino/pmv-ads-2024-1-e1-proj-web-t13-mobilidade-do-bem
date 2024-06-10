@@ -24,11 +24,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-3 - Menu de Navegação deve fazer o link entre as páginas  |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Requisitos Associados | RF-01 A aplicação deve permitir ao usuário cadastrar uma conta / RF-02 A aplicação deve permitir ao usuário fazer o login da sua conta / RF-03 A aplicação deve permitir a diferenciação entre perfis de pessoas físicas candidatas a empréstimo ou doação, pessoas físicas e jurídicas doadoras e pessoas jurídicas que irão emprestar / RF-04:A aplicação deve permitir o cadastro dos aparelhos de mobilidade / RF-05: Deve permitir ao usuário adquirir o equipamento desejado / RF-06: A aplicação deve ter uma área que mostra diversos equipamentos próximos|
+| Objetivo do Teste | Realizar a verificação se o menu de navegação está direcionando para as paginas corretas |
+| Passos |1.Acessar o navegador<br>2.Informar o endereço do site<br>3. Clique nas paginas que deseja acessar no menu de navegação  |
+| Critérios de êxito | Todos os links no menu de navegação serem acessados corretamente |
+| Responsável pela elaborar do caso de Teste | Letícia Moreira |
 
  
 
