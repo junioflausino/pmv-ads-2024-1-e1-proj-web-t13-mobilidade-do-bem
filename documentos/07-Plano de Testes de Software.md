@@ -15,11 +15,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-2 - Deve permitir fazer login da conta |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Requisitos Associados | RF-2 A aplicação deve permitir ao usuário fazer o login da sua conta |
+| Objetivo do Teste | Verificar se o login foi devidamente realizado |
+| Passos | Ao acessar o site, clicar no ícone de usuário e realizar o preenchimento dos dados, clicar em enviar. |
+| Critérios de êxito | Após preenchimento de email e senha, a página foi logada e constou o link "Sair", indicando que o usuário está logado. |
+| Responsável pela elaborar do caso de Teste | Daianne Paula Moreira Pinto |
 
  
 
