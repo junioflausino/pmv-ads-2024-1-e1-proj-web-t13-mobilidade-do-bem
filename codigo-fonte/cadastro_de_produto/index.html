@@ -17,7 +17,7 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(115, 37, 224);">
+    <nav class="navbar navbar-expand-lg" style="background-color: #7426E0;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação"
             style="background-color: rgb(255, 255, 255);">
@@ -52,9 +52,6 @@
     <section class="menu">
       <div class="profile-sidebar">
         <div class="profile-usertitleU">
-          <div class="profile-usertitle-name">
-            Olá, Usuário
-          </div>
         </div>
     </div>
         <div class="profile-usermenu">
@@ -67,7 +64,8 @@
     <main>
       <div style="overflow-x: auto;" class="col-md-9">
         <div class="profile-content">
-            <div class="cadastrar">
+          <form>
+          <div class="cadastrar">
               <h1 class="cad-um">Cadastro de Produto</h1>
               <div class="caixas">
                 <div class="caixa">
@@ -93,7 +91,7 @@
                     </select>
                     <div class="caixa">
                       <label>Tempo de Empréstimo</label><br />
-                      <input type="text" maxlength="4" name="tempo" id="cad-tempo" required
+                      <input type="text" maxlength="10" name="tempo" id="cad-tempo" required
                         placeholder="Ex: 30 dias"></br>
                     </div>
                 <div class="caixa">
@@ -107,17 +105,16 @@
                     placeholder="Insira a URL da imagem do seu produto"><br />
                 </div>
               </div>
-              <div>
-                <button onclick="verificarCampos()" class= "cad-button" id="botao" type="button">Cadastrar</button>
-              </div>
             </div>
           </form>
         </div>
       </div>
+      <div>
+        <button onclick="verificarCampos()" class= "cad-button" id="botao" type="button">Cadastrar</button>
+      </div>
     </main>
     <footer class="rodape"> 
-      <p>Copyright &#169 2024</p><div><img width="100" src="../img/logorodape.png" alt="logo">
-      </div><p>| Todos os direitos reservados</p></footer>
+      <p>Copyright &#169 2024 Mobilidade do Bem | Todos os direitos reservados</p></footer>
 </body>
 
 </html>
