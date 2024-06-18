@@ -72,6 +72,7 @@ h1 {
     background-color: rgb(115, 37, 224);
     color: rgb(255, 255, 255);
     font-family: josefin sans;
+    text-align: center;
 }
 
 .container-fluid {
