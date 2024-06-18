@@ -156,7 +156,7 @@
       padding: 3px;
       border: 1px solid #d8d3ce;
       color: #7a3e7a;
-      border-radius: 3px;
+      border-radius: 5px;
     }
     
     .cad-button {
@@ -168,7 +168,7 @@
       background-color: #019e09;
       margin-left: 130px;
       margin-bottom: 30px;
-      border-radius: 3px;
+      border-radius: 5px;
       padding: 5px 25px 5px 25px;
       cursor: pointer;
     }  
@@ -177,7 +177,7 @@
       height: 10rem;
       width: 80rem;
       border: 1px solid #d8d3ce;
-      border-radius: 3px;
+      border-radius: 5px;
     }
   
   #info {
