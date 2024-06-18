@@ -46,13 +46,13 @@
 
     
 
-   
+   <img src="../img/meuperfil.jpg"  width="90" alt="meu perfil">
    <form id="formulario" name="formulario"> 
     <h4>Perfil</h4> 
-    <input type="text" name="" id="name" placeholder="Nome completo"><br>
-    <input type="text" name="" id="E-mail" placeholder="E-mail"><BR>
-    <input type="tel" name="" id="telefone" placeholder= "Numero de telefone" maxlength="13"><br>
-    <input  type="text" required maxlength="8" placeholder="CEP" name="cep" onblur="formatarCEP(this)" >
+    <input type="text" name="" id="name" placeholder=" Nome completo"><br>
+    <input type="text" name="" id="E-mail" placeholder=" E-mail"><BR>
+    <input type="tel" name="" id="telefone" placeholder= " Numero de telefone" maxlength="13"><br>
+    <input  type="text" required maxlength="8" placeholder=" CEP" name="cep" onblur="formatarCEP(this)" >
    
 
 
@@ -63,7 +63,12 @@
 
 
 <style> 
-
+ 
+img{
+    position: relative;
+    left: 46%;
+    margin-top: 5%;
+}
 
      *{
         box-sizing: border-box;
@@ -73,23 +78,34 @@
     body{
         width:100%;
         height:100%;
+        background-color: #e0e0e0;
 
 }
 #formulario
 {
-    width: 300px;
-    margin:200px auto;
+    width: 360px;
+    margin-left: 35%;
+    margin-top: 1%;
+    margin-bottom: 5%;
     text-align: center;
 
 }
 input
 {
+font-size: 16px;
 display: block;
-margin: 2px auto;
-width: 200px ;
-height: 25px;
-border:  1px solid #EB7D17;
+margin: 5px auto;
+width: 290px ;
+height: 35px;
+border-radius: 5px;
+border:  1px solid #a39e98;
        }
+
+h4{
+   padding-top: 10px;
+   margin-bottom: 10%;
+   font-size: 18px;
+}
 
    
     </style>
