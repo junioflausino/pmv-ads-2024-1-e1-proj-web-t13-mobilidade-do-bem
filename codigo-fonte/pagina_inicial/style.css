@@ -79,6 +79,10 @@ h1 {
     margin-top: 50px;
 }
 
+p {
+    text-align: left;
+    text-align: justify;
+}
 
 .rodape{
     background-image: linear-gradient( to right, #7426E0 , #EB7D17);
