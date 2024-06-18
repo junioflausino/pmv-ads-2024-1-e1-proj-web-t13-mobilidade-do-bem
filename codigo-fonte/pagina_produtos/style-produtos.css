@@ -62,7 +62,7 @@ body{
     color:#f5f5f5;
     text-align: static;
     padding: 18px 0px 18px 0px;
-    position: static;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
